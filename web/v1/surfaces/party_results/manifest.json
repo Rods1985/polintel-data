@@ -20,7 +20,7 @@
       "path": "partitions/party_results/year=2024/state=RO/page=0001.json",
       "rows": 680,
       "bytes": 241600,
-      "sha256": "6910545AE5B20BF6ECAFDF45D334A7ED849D4DB0B5197DA1C5ECFF6EE53E97FF",
+      "sha256": "1B261B2BD7341BE8634D3C8A184F0CD680383BB17C874B564037652D806DDAB4",
       "partition": {
         "year": 2024,
         "state": "RO",

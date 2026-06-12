@@ -1,0 +1,712 @@
+{
+  "schema_version": "web/v1",
+  "surface": "section_turnout",
+  "description": "Comparecimento e abstencao agregados por municipio e zona. O menor grao disponivel nesta fonte nao e secao.",
+  "source_type": "consolidado_tse_partial",
+  "source_format": "duckdb_sql",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [
+      "round",
+      "city_id"
+    ],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 60,
+  "file_count": 53,
+  "bytes": 39210,
+  "files": [
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00019/page=0001.json",
+      "rows": 1,
+      "bytes": 683,
+      "sha256": "266949782F01F837F1FFAED6B2AD7C049AD799EA7CA53C2D8B1AB08D3D74535D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00019",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00035/page=0001.json",
+      "rows": 4,
+      "bytes": 1978,
+      "sha256": "8E1A14045F95F1BAAC0541B889E3E5F052C41EB627C3860818169D1A8366DFC7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00035",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00051/page=0001.json",
+      "rows": 2,
+      "bytes": 1109,
+      "sha256": "721F355C782B327420F737B21440362133D921E4B0A503818DD097E8E6FA6A17",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00051",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00078/page=0001.json",
+      "rows": 1,
+      "bytes": 679,
+      "sha256": "70AF9B4FF1CE6ACBA727898DCD1ECD0998F1FF3088EAFF56B9812C2FB78F7976",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00078",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00094/page=0001.json",
+      "rows": 1,
+      "bytes": 675,
+      "sha256": "6177ACC733F89151AE7DE39693029C9B74A0D671ACB18913061AE20E19E59A31",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00094",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00116/page=0001.json",
+      "rows": 1,
+      "bytes": 682,
+      "sha256": "438AB12580A00133A5D75FFF794A23C77197A50358BD8F29BF2E0B8624921DB1",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00116",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00132/page=0001.json",
+      "rows": 1,
+      "bytes": 676,
+      "sha256": "F0E85AFB51624C2FE92A749F468F381DFEAC5777294FC98D398C64DD31909CE7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00132",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00159/page=0001.json",
+      "rows": 1,
+      "bytes": 674,
+      "sha256": "19C6A56482B320B5810E1E3C1F281430FCA9C87CD10562D6CA33ED4C92B21694",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00159",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00175/page=0001.json",
+      "rows": 1,
+      "bytes": 689,
+      "sha256": "E18831A49AAA1E8176191CFD649EF1BEAEA1BD0BA97EC210352C65D9AEEFE748",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00175",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00191/page=0001.json",
+      "rows": 1,
+      "bytes": 686,
+      "sha256": "CD62BFB9D1940692AAED1F2025026A539937AE9C93885189A625228C897C00E7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00191",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00213/page=0001.json",
+      "rows": 1,
+      "bytes": 681,
+      "sha256": "2DB499838C9FA29E4FD0C291E1148A96203FA2F8B22CF401DA8567ED2DA91193",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00213",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00230/page=0001.json",
+      "rows": 1,
+      "bytes": 684,
+      "sha256": "6FE099725767E7AB9745F83AF1DE745122207A5F321E070079C0A2DCBC2023C7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00230",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00256/page=0001.json",
+      "rows": 1,
+      "bytes": 686,
+      "sha256": "F52D2031F6F5B081278CE1EC6E99B6EBB0ED79AB7A77CE344BFD9FC48A6F7D9F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00256",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00272/page=0001.json",
+      "rows": 1,
+      "bytes": 679,
+      "sha256": "64A4085489B5E1D14C9E277E59E1C8956BCB1FB9DF226D2AC0503D569782B887",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00272",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00299/page=0001.json",
+      "rows": 1,
+      "bytes": 684,
+      "sha256": "8DD3AC269424806C554CE5A6902B44EBC8C0BF4F07A0334A8C791A56DAFD38A1",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00299",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00310/page=0001.json",
+      "rows": 1,
+      "bytes": 690,
+      "sha256": "20AC52E24A141DAC163480A78FF07BB557AD728F70A44F38C2EC446580F252DC",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00310",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00337/page=0001.json",
+      "rows": 1,
+      "bytes": 686,
+      "sha256": "DB37984E1183BE66F9ABDBF86E0DF4C634B4F5681792174B2C3D70F3DADED1F5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00337",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00353/page=0001.json",
+      "rows": 1,
+      "bytes": 688,
+      "sha256": "5EC7D63F845714C23FFE518634863586C803DBC6182026080022774A48B769C5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00353",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00370/page=0001.json",
+      "rows": 1,
+      "bytes": 694,
+      "sha256": "D767ED2CEDCF8D3E2B358C752B8FA79C4C0822F2D2E26179D50486DBAE8322FE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00370",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00396/page=0001.json",
+      "rows": 1,
+      "bytes": 688,
+      "sha256": "A2704C48452C959CA581FC2458B162B78AA0ECDE947C7062FFE393CC43EEED0E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00396",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00418/page=0001.json",
+      "rows": 1,
+      "bytes": 692,
+      "sha256": "768A2685D22C7C97DF9712379F6B96AC5BD9CBEA02C98C045412963A6C8060C5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00418",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00434/page=0001.json",
+      "rows": 1,
+      "bytes": 680,
+      "sha256": "7982CE38CBA62DD8B9F02C79C0A2CF10E34558F2B4941A2786C55E2C170D98A7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00434",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00450/page=0001.json",
+      "rows": 1,
+      "bytes": 673,
+      "sha256": "CA6049CF8A4577B323D1C7622936E6C9D790910C949A59AA73E28792DD9F953F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00450",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00477/page=0001.json",
+      "rows": 1,
+      "bytes": 687,
+      "sha256": "E662231F021E2D2CAF78A33F1C96D257EA8AB4F90F4AA39C8511B99EC6DE8CC5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00477",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00493/page=0001.json",
+      "rows": 1,
+      "bytes": 683,
+      "sha256": "84CEE2A50C5A882404B00EEAA09281F962709D518E2598825A8CC831546F72ED",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00493",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00515/page=0001.json",
+      "rows": 1,
+      "bytes": 691,
+      "sha256": "B0B5E35A3DDCE1171CF5159D759A7A9FCAC9C89E352E5D7F29C6160C151C5511",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00515",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00531/page=0001.json",
+      "rows": 1,
+      "bytes": 679,
+      "sha256": "2591EC068B187E2183A718CC05733B2E7973AD0CCC9E727296CAD04D0693B187",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00531",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00558/page=0001.json",
+      "rows": 1,
+      "bytes": 684,
+      "sha256": "DB4085746EDE813856909EA9C0FA067AD01751256493157F8AD0B731517D7273",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00558",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00566/page=0001.json",
+      "rows": 1,
+      "bytes": 674,
+      "sha256": "F78783376886014E71A1585DFBC334C22F81C688A21182584A32216AB6B35D09",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00566",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00574/page=0001.json",
+      "rows": 1,
+      "bytes": 685,
+      "sha256": "92A28517DF0BBDE7792765DEF68ACE5D2C0849C747D5575B35E60C12D59A3D58",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00574",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00582/page=0001.json",
+      "rows": 1,
+      "bytes": 681,
+      "sha256": "A3FC88A1AF2071C6387DE2A7D9BECC22271AD297DBE57B4D714775FA3AA26990",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00582",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00590/page=0001.json",
+      "rows": 1,
+      "bytes": 678,
+      "sha256": "85F9DBF602C961121BD5ED11010C4C70285705C2E3A13B80437F13A1205FFE0B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00590",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00604/page=0001.json",
+      "rows": 1,
+      "bytes": 687,
+      "sha256": "45238A65590359B577FB947B059A5103771C18B42C6E0D4BFABEA24B5041FEC7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00604",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00612/page=0001.json",
+      "rows": 1,
+      "bytes": 693,
+      "sha256": "28D27485F8E67A78DF5F8E28A4FE7A029098BF85F3DF6C8D5D06C6D304FC8B4E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00612",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00620/page=0001.json",
+      "rows": 1,
+      "bytes": 678,
+      "sha256": "3766CF26B1A11D6DEEFC663F946C50C9073941730491452DAD35BFB2B6FA9698",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00620",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00639/page=0001.json",
+      "rows": 1,
+      "bytes": 681,
+      "sha256": "13911BE99A879BB5BC54447A0DB81F1B54051DE8B3B7E77A223BE179CF316F48",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00639",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00647/page=0001.json",
+      "rows": 1,
+      "bytes": 676,
+      "sha256": "00734FCA7507E03F1393E68B9EDE7BCAD0844068F108C548AFA98346E8D613EB",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00647",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00655/page=0001.json",
+      "rows": 1,
+      "bytes": 677,
+      "sha256": "6442D64B12CA40D59D9557C9706E6BE88560559C95213855854DCD5537BEACCD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00655",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00663/page=0001.json",
+      "rows": 1,
+      "bytes": 679,
+      "sha256": "93BF39F3C09F7370ADF700A730867729225AB83712423346D83226C1E2B6965C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00663",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00671/page=0001.json",
+      "rows": 1,
+      "bytes": 691,
+      "sha256": "A1461CA8A47A1150C6C71A957870D7407060AA1788759D0FA1440192E6CD172B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00671",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00680/page=0001.json",
+      "rows": 1,
+      "bytes": 676,
+      "sha256": "31BA9770FCC858C8A38192ABA905077AF31C5D41CDC7D14874138B26256369D3",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00680",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00698/page=0001.json",
+      "rows": 1,
+      "bytes": 682,
+      "sha256": "E6FDE4DB72F0567628E9656DB8958A0C75C24B21F5675C13286C97F89BC76F1E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00698",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00701/page=0001.json",
+      "rows": 1,
+      "bytes": 674,
+      "sha256": "EA446BB841016BA75CBBB80F24A4851C88724680571EBB3A7CB137E9738B0B98",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00701",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00710/page=0001.json",
+      "rows": 1,
+      "bytes": 686,
+      "sha256": "6FCD939C50876CD43770341A33D0777A41C6ACE167C41CD3D844009194516E5A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00710",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00728/page=0001.json",
+      "rows": 1,
+      "bytes": 685,
+      "sha256": "947C8019874F0494C17EFA768CF4E3521ABF90910559754019CAC3F22B9D8C49",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00728",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00736/page=0001.json",
+      "rows": 1,
+      "bytes": 692,
+      "sha256": "0C0166A3D6ADF25816A7008EDE5FE5FE4FFE235D3D9E57B18EB52602F5648401",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00736",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00744/page=0001.json",
+      "rows": 1,
+      "bytes": 677,
+      "sha256": "E22F7749570DC38A0320CC99CF7EABD66FBE83FE2D522139C94F0E0F29881AA4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00744",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00752/page=0001.json",
+      "rows": 1,
+      "bytes": 681,
+      "sha256": "5C3910648511457745F5838E94CF60B4DC9C92896464A58697D182344AA0AE77",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00752",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00779/page=0001.json",
+      "rows": 1,
+      "bytes": 676,
+      "sha256": "75BA1506ABC893A85DB684D8521F0FC637CFF795D794F1910004390B2D449E48",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00779",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00787/page=0001.json",
+      "rows": 1,
+      "bytes": 685,
+      "sha256": "1228CC560D6E817E8D30F68FE4259BF384705F271A2EA2577FDDE280BA65D8F7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00787",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00795/page=0001.json",
+      "rows": 1,
+      "bytes": 694,
+      "sha256": "BDAC84CBB28515C68E6041B7B05CC7940780FDE0F068F5DB13004B60C15CD042",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00795",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=1/city_id=00809/page=0001.json",
+      "rows": 1,
+      "bytes": 679,
+      "sha256": "0803D721B31A1C556C7C6F92F007A0796B2F8A164EFCAAC0ED2E057AD0814DFF",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00809",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_turnout/year=2024/state=RO/round=2/city_id=00035/page=0001.json",
+      "rows": 4,
+      "bytes": 1983,
+      "sha256": "B66769DD0BC4C7ED610ACC5683B0708E1DEF119E283AAF2D83BE1EBC91D01DBB",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 2,
+        "city_id": "00035",
+        "page": 1
+      }
+    }
+  ]
+}

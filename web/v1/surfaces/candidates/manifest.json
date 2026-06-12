@@ -22,7 +22,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=11/page=0001.json",
       "rows": 342,
       "bytes": 202279,
-      "sha256": "FED009265AA5F14F049B176DA381787DC32FA84A0F860AE6045163A84CF064D9",
+      "sha256": "F4AE6B9197EEFEE2BFE89598F8763FA5A747F0C9EFD215DE7066B4D367B85DE1",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -34,7 +34,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=12/page=0001.json",
       "rows": 350,
       "bytes": 210993,
-      "sha256": "B5E7D85E482EACE101E7F87CB9F5C0CB9BB82E17455F0D20A4BFB6C6C8E5C857",
+      "sha256": "4F8F82D8ED1D270433D5A78A8462D4BB8943D9F4BFA5B66E74AFADAF51203F7C",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -46,7 +46,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=13/page=0001.json",
       "rows": 5000,
       "bytes": 2972344,
-      "sha256": "6C19E207560215C5AA5036672DABC307037AF35619D3BCC7AE75CA0CB3DAA1A0",
+      "sha256": "423A3F3C2B6F5D66488674495725A687BAB4117A2F2D0AAA0F31560ABD893B13",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -58,7 +58,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=13/page=0002.json",
       "rows": 4064,
       "bytes": 2454310,
-      "sha256": "53B15C075BBB727F6F706C6B23B73CD22296705852FEF785A3BFA26DCF9FC9C9",
+      "sha256": "4745095477956544A104C2887C447B3EBC066FB010E558F643DD2D552174400A",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -70,7 +70,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=na/page=0001.json",
       "rows": 5000,
       "bytes": 2250228,
-      "sha256": "8F194AB4239C4D115F80F910009FE2D10E960597CA651A4FA99960E54C1DD736",
+      "sha256": "2C5099BB8D92C00C8EA7CE50D51DF0963FA487A709CF45D9AB4578C8CFA3BA4F",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -82,7 +82,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=na/page=0002.json",
       "rows": 5000,
       "bytes": 2250228,
-      "sha256": "88A24B6AAA79FCB631F98AE3B26074651547C8EDDFEAC5D44D47FDC27A152F57",
+      "sha256": "5519E29AFD5FC8CB4DA23AE3A6BA9680BCE81534E233CFF601F1BE3CB8C94677",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -94,7 +94,7 @@
       "path": "partitions/candidates/year=2024/state=RO/office_id=na/page=0003.json",
       "rows": 2886,
       "bytes": 1298928,
-      "sha256": "82BC01E2CA42907AB70D6C2243EACC40B7C7AE39929A6CD09BC66AF316517A28",
+      "sha256": "1B05A8BE8AA23B226278738BFE83133C2F776241E722E718858F6CA38D0736CE",
       "partition": {
         "year": 2024,
         "state": "RO",

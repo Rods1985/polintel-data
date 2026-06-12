@@ -1,0 +1,868 @@
+{
+  "schema_version": "web/v1",
+  "surface": "finance_candidate_counterparties",
+  "description": "Detalhamento financeiro agregado por candidato, tipo de movimento, contraparte e especie de recurso.",
+  "source_type": "consolidado_tse",
+  "source_format": "duckdb_sql",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [
+      "office_id",
+      "city_id"
+    ],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 51534,
+  "file_count": 65,
+  "bytes": 30768231,
+  "files": [
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=11/city_id=na/page=0001.json",
+      "rows": 5000,
+      "bytes": 2984869,
+      "sha256": "9D50D5695AD34DD383199BFE9C43D9256034CEB99A59D84969E46EC9664E6796",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "city_id": null,
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=11/city_id=na/page=0002.json",
+      "rows": 5000,
+      "bytes": 2970625,
+      "sha256": "56AC96D05A03D7E9D0B9749C3C6773E0FEC3B035AE61D9FDDC6B00095CCF1462",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "city_id": null,
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=11/city_id=na/page=0003.json",
+      "rows": 1361,
+      "bytes": 810995,
+      "sha256": "A0D348A4CA9F7491FBB8BF5BF5C52A275A88ED21752F5925FE4F3378A3ACEEF7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "city_id": null,
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0001.json",
+      "rows": 5000,
+      "bytes": 2998572,
+      "sha256": "83AFA3AE5A0BA2E1A21428597B9CA8BCE337362B8195F66B03325329A9BC5FF4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0002.json",
+      "rows": 5000,
+      "bytes": 3001479,
+      "sha256": "B0CB4F5C738A08F8E503AD81C50D5587A0ED9DD35D7260EA722E7CAFE3D72F74",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0003.json",
+      "rows": 5000,
+      "bytes": 3010571,
+      "sha256": "7090771A8CDFDC9BE8F5A2403A4D214018CC634E9CCB10B63527F8C3F5DE59EC",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0004.json",
+      "rows": 5000,
+      "bytes": 2999981,
+      "sha256": "52B6313DE5D8E3FF590372ECDB5D960EF19C2171ECCD759E921F4158827DC8FE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 4
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0005.json",
+      "rows": 5000,
+      "bytes": 3009614,
+      "sha256": "13AF910A081E1B2928B6DF7DC1362B46E8D972B0EA6F88B2813A7AAAA1393814",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 5
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0006.json",
+      "rows": 5000,
+      "bytes": 3003913,
+      "sha256": "2991C67FC47CB3EEC95DF46E1D8894E115AF17C55FECF8927E794747F8F55B2B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 6
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0007.json",
+      "rows": 5000,
+      "bytes": 3002283,
+      "sha256": "4B0A32F2929754C42F4E266B4AD563913A38FB490A1B0DAF09305539D996B501",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 7
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=13/city_id=na/page=0008.json",
+      "rows": 2413,
+      "bytes": 1447843,
+      "sha256": "D0C7AB6F24917C8FF38D09EF45FD89D0B8F6F1507980781C7ECD080A823D77B8",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "city_id": null,
+        "page": 8
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=-1/page=0001.json",
+      "rows": 1511,
+      "bytes": 841723,
+      "sha256": "8F3AD2764284D9D399895CC5BF67C80A940F37B58A1A82EE85670D30FD5D2878",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "-1",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=116/page=0001.json",
+      "rows": 31,
+      "bytes": 17070,
+      "sha256": "54EE20A57C5C3B19D041810EEADB6C82389B43599B935327131235CD9F217F13",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "116",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=132/page=0001.json",
+      "rows": 32,
+      "bytes": 17262,
+      "sha256": "B14B5AC33D9DBD0279B68A843514111D70A86DE879031FB3C64107D2A7C96018",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "132",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=159/page=0001.json",
+      "rows": 84,
+      "bytes": 46997,
+      "sha256": "774B75CB0016B6B93DF599CDDBC3E6AE70EE86A891288A22A915E05F02FD9A1D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "159",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=175/page=0001.json",
+      "rows": 27,
+      "bytes": 14906,
+      "sha256": "C60EC28B000CA056111EEE45A4F467C2615431BF61D943650D895B93EEF200D2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "175",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=19/page=0001.json",
+      "rows": 29,
+      "bytes": 15640,
+      "sha256": "24B7E7C23A2B2D2B3CC5CFB1313D7C7111F2C3F9C529E111048CA2435FB2402D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "19",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=191/page=0001.json",
+      "rows": 18,
+      "bytes": 9838,
+      "sha256": "5AD42DA5C87300EE2929206E2CF301BBB7CB099C1D8D19269B87584597993C46",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "191",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=213/page=0001.json",
+      "rows": 27,
+      "bytes": 14540,
+      "sha256": "7818DBE153723419257FD164B6AEFED1EE2AEA0C34846AE9B581180A7C852128",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "213",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=230/page=0001.json",
+      "rows": 26,
+      "bytes": 14298,
+      "sha256": "DCFD95CAD75DECBD3E9EB9D53E4487012CD2FAC9067C077CE361F54434FD26E8",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "230",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=256/page=0001.json",
+      "rows": 20,
+      "bytes": 10862,
+      "sha256": "3A54ED3D22C22D6C621F270372684CF9CC2C2BD3E37872195DFED0EBCACD9F8A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "256",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=272/page=0001.json",
+      "rows": 20,
+      "bytes": 10722,
+      "sha256": "8C7E28A948BCB7B552BFFCE5EB753FDF19CECFF89AE4C8BDCA8F3038EBBA2DBD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "272",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=299/page=0001.json",
+      "rows": 64,
+      "bytes": 35482,
+      "sha256": "6E6621D70C547850CA678B63FEEF01BF6D82779F247F693C85AD46322FB17850",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "299",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=310/page=0001.json",
+      "rows": 55,
+      "bytes": 31308,
+      "sha256": "28567B9937A3FBC7285BF0AF264DD3D653FD912401E60B58CB6C5E6B556D7879",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "310",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=337/page=0001.json",
+      "rows": 21,
+      "bytes": 11621,
+      "sha256": "379D0C7753AE5280B5DBE28B3B213F858615B19DAAEF7D3FFAD56BE64A45BD07",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "337",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=35/page=0001.json",
+      "rows": 72,
+      "bytes": 40164,
+      "sha256": "ADA31BA45B1A600DEA082B8DCFBA4895EE78F399A5E3137E6F629954C83B57F7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "35",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=353/page=0001.json",
+      "rows": 10,
+      "bytes": 5576,
+      "sha256": "F168CAF98E8A11DBEA49FA0B2470CF8CD0588C8183E9FB95515E79E4EFAA6357",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "353",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=370/page=0001.json",
+      "rows": 16,
+      "bytes": 8862,
+      "sha256": "EDD144CBAE3CB7C1445B19D6682248B105E26A10B93CC67BD6A8A072FA3E2E25",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "370",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=396/page=0001.json",
+      "rows": 37,
+      "bytes": 20628,
+      "sha256": "EDDDD57C879E65C0CCDEA7C682790CCDCDD9FEF441B7A475B656BC7904085A19",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "396",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=418/page=0001.json",
+      "rows": 20,
+      "bytes": 10952,
+      "sha256": "3AE35D79D96A3CC4E332178F63D2A3B97D8BBB7E1EB49B2EAE29D0038B4AD855",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "418",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=434/page=0001.json",
+      "rows": 24,
+      "bytes": 12802,
+      "sha256": "B6C98B0B18F930CC44B6A4EF92D7939E29C16EC112F98512A084B73751BC8714",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "434",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=450/page=0001.json",
+      "rows": 14,
+      "bytes": 7538,
+      "sha256": "F7B0C17ED49976930196261D4865784FA9B68E1B0ED0D543BC8B07B34872CB90",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "450",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=477/page=0001.json",
+      "rows": 24,
+      "bytes": 13052,
+      "sha256": "674D1B6331B40B1B7402F7E26FD0657454B7B8B4646AE68534E8FF1322330944",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "477",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=493/page=0001.json",
+      "rows": 12,
+      "bytes": 6633,
+      "sha256": "44A5FEA105348CAD9F2BDAB6B59A939002379605D530295B8C27DF714632F148",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "493",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=51/page=0001.json",
+      "rows": 29,
+      "bytes": 15518,
+      "sha256": "82EE342307C9EB79249285ECCD1EE1C9ADCC0E29D51CEA210E1ADCA593FC30A5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "51",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=515/page=0001.json",
+      "rows": 16,
+      "bytes": 8798,
+      "sha256": "8C820F434C60F0252E6A3C4FC80CB4747ADBDBA793CB0605FAB7AD31695ECDEA",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "515",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=531/page=0001.json",
+      "rows": 18,
+      "bytes": 9770,
+      "sha256": "5EDF6483D34BC43B863CB678FCF1DBE2713955E4651164EB41B07DBC41F1985A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "531",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=558/page=0001.json",
+      "rows": 12,
+      "bytes": 6640,
+      "sha256": "0545CD2D2BD3EDD6D843FCEB50EFCE8DC0F4DDAB73BA027C7F82668CFEE8B194",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "558",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=566/page=0001.json",
+      "rows": 25,
+      "bytes": 13382,
+      "sha256": "138FA0D0C8574CBB1573B4BE3A29A17309D0E7987F06E340ECA49E0E8A0AA12E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "566",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=574/page=0001.json",
+      "rows": 27,
+      "bytes": 14592,
+      "sha256": "069DF42DFA8C46DF330F23A822D76A2079FE18D730AE4776B02E0AB91080974F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "574",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=582/page=0001.json",
+      "rows": 18,
+      "bytes": 9734,
+      "sha256": "AD1CD12A6198B42605A3C15057A959D44FEC169C201F1C64BA63AB2CF54F2E45",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "582",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=590/page=0001.json",
+      "rows": 12,
+      "bytes": 6540,
+      "sha256": "C06B3DBF1D91EF7BB6EB9741A3170D542A9EBA5EB4754C60421BA99B0E96C59F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "590",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=604/page=0001.json",
+      "rows": 15,
+      "bytes": 8278,
+      "sha256": "2DDB6526B05DA9112F661A5615D2EC2CE7B71E1A558A879C18CA9F24B4EA71E0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "604",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=612/page=0001.json",
+      "rows": 16,
+      "bytes": 8868,
+      "sha256": "08484AA3B21FB757635490B3088AB1CD496A3D645C5C3A6EED509803967F87BE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "612",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=620/page=0001.json",
+      "rows": 12,
+      "bytes": 6546,
+      "sha256": "D6CC1B4FFF378137A0392EE9209305654087F7B560BAB1D8D1A865CBEB47B0C4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "620",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=639/page=0001.json",
+      "rows": 31,
+      "bytes": 17644,
+      "sha256": "58C55890CAAE1BDB7C5B6B7319D20445C6BBD718FB54D6C0A76B42720E7F85E8",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "639",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=647/page=0001.json",
+      "rows": 12,
+      "bytes": 6544,
+      "sha256": "C9854E672AA37243CC5BBD91FFD523BED64F1A186CE076A869D2A3D4E9C8FB8E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "647",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=655/page=0001.json",
+      "rows": 14,
+      "bytes": 7544,
+      "sha256": "3B62741F7F85E8A03E2BCFE8969A9990357D2279C9FDAA092FB8CE0908CC1A44",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "655",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=663/page=0001.json",
+      "rows": 16,
+      "bytes": 8638,
+      "sha256": "DFEAE88A39E1F2A3F072F2D34315337272B5AABC6E1F659F3EAF911B7056F9C3",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "663",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=671/page=0001.json",
+      "rows": 18,
+      "bytes": 9890,
+      "sha256": "24FB00099ACBA3119EF6CD549C13C03A753B516C64AE864D84FF00E65F4C3161",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "671",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=680/page=0001.json",
+      "rows": 18,
+      "bytes": 9604,
+      "sha256": "77AA28DACD3F045A700AD7C13F282356CD2CE91DCF6BF581482FC455A6681177",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "680",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=698/page=0001.json",
+      "rows": 16,
+      "bytes": 8640,
+      "sha256": "FE160C1227DF4D2062E8A44ED34D0299D1BE8F0F687727C80CF6D64C2EC62940",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "698",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=701/page=0001.json",
+      "rows": 13,
+      "bytes": 7087,
+      "sha256": "79234039CD446707EDCC93136AB38701AF060F1106852E9DDE04BFFC5252AE8B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "701",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=710/page=0001.json",
+      "rows": 14,
+      "bytes": 7672,
+      "sha256": "D09C2BF061E3FA1968CA6095A12B71B4D8BC102255340602BE2D83B2BDBC126A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "710",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=728/page=0001.json",
+      "rows": 12,
+      "bytes": 6640,
+      "sha256": "2D8D19AB13A2DEC036809BF7DFFCC8F03015CE39DF1BDE131D36BB04AB3312EF",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "728",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=736/page=0001.json",
+      "rows": 17,
+      "bytes": 9403,
+      "sha256": "6EA1076E4B5E3B39DD068266E925A6250CA7B9049F77E5AB41F519C090686E13",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "736",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=744/page=0001.json",
+      "rows": 17,
+      "bytes": 9388,
+      "sha256": "1BAA9135238AF49670335C0D560D1A77DD5AD4BC60F1593DC5E59B83B936D6EC",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "744",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=752/page=0001.json",
+      "rows": 12,
+      "bytes": 6608,
+      "sha256": "419C11F3EA676AC0D0353E53FEAA8B7E6138E0055E1BF4D7C3D738FE67DA8A21",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "752",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=779/page=0001.json",
+      "rows": 14,
+      "bytes": 7578,
+      "sha256": "B5C77522A8E8C3B5F29217F804F18A27EB9A612109BD0D974E9A668982F78253",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "779",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=78/page=0001.json",
+      "rows": 54,
+      "bytes": 30031,
+      "sha256": "86C5E0920EAF631179D77C7D8EDD536638375B2CC7AA18D25548B8831A56BD6D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "78",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=787/page=0001.json",
+      "rows": 12,
+      "bytes": 6642,
+      "sha256": "F0F7476B431CC89CB646364F25656F96234DA9EB36B19AFBDE791739632A2E21",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "787",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=795/page=0001.json",
+      "rows": 18,
+      "bytes": 9912,
+      "sha256": "5A253E6341F1052B7920585B5544A53E53D653662AF245F10620147267CB1852",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "795",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=809/page=0001.json",
+      "rows": 20,
+      "bytes": 10710,
+      "sha256": "7DDA8D59CB58F07F9932992D59F606DDCAC2B469D50FD6448B7E8DCB8C8A35C6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "809",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=94/page=0001.json",
+      "rows": 29,
+      "bytes": 15354,
+      "sha256": "9EC3BFF9FD8F2ECF1F581195D5B1FB4AECE7D11C801D2726F7AC5BD6FC803D76",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": "94",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/finance_candidate_counterparties/year=2024/state=RO/office_id=na/city_id=na/page=0001.json",
+      "rows": 9,
+      "bytes": 4815,
+      "sha256": "29B9607C1D37AE08AA2021917B403E90F9C89F4792789AD1D19D80E458C97679",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "city_id": null,
+        "page": 1
+      }
+    }
+  ]
+}

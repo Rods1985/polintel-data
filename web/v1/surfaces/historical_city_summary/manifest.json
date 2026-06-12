@@ -1,0 +1,97 @@
+{
+  "schema_version": "web/v1",
+  "surface": "historical_city_summary",
+  "description": "Resumo historico municipal multianual para analise de volatilidade e evolucao territorial.",
+  "source_type": "consolidado_tse",
+  "source_format": "duckdb_sql",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 676,
+  "file_count": 7,
+  "bytes": 318030,
+  "files": [
+    {
+      "path": "partitions/historical_city_summary/year=2012/state=RO/page=0001.json",
+      "rows": 52,
+      "bytes": 22234,
+      "sha256": "AC0390A77DAC12995FF4D95175668BA6BD0396F27F6BE138B47893BCD7243106",
+      "partition": {
+        "year": 2012,
+        "state": "RO",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/historical_city_summary/year=2014/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 48008,
+      "sha256": "CF3A041226B9D8187B7CE514193AABCD3931C4328474C70AC9F9066C2FE475FC",
+      "partition": {
+        "year": 2014,
+        "state": "RO",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/historical_city_summary/year=2016/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 49532,
+      "sha256": "DDCF170C4818F4C4253EEE17C5A124580A0CD71730A8C0895E0E450408C4479D",
+      "partition": {
+        "year": 2016,
+        "state": "RO",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/historical_city_summary/year=2018/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 49579,
+      "sha256": "5E72DF43A1327D376CA253BB3BDB7EFAF677386A5C58B3D0038EF1CDF16048C2",
+      "partition": {
+        "year": 2018,
+        "state": "RO",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/historical_city_summary/year=2020/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 49518,
+      "sha256": "ABED9A98E1B6C64D066085603F34C7B9489F3692B6BB2FEDD7E1A3CC715AA6C3",
+      "partition": {
+        "year": 2020,
+        "state": "RO",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/historical_city_summary/year=2022/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 49625,
+      "sha256": "9D0B7EE7B53096F28DD39B789C43056F773FD674721C403AF38C321418A3C79B",
+      "partition": {
+        "year": 2022,
+        "state": "RO",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/historical_city_summary/year=2024/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 49534,
+      "sha256": "8CDB8EF72EA70FB9D0ABE1FC75D02EFB0B28EC732C3B0B52E7460C25B999838A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "page": 1
+      }
+    }
+  ]
+}

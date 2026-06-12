@@ -1,0 +1,712 @@
+{
+  "schema_version": "web/v1",
+  "surface": "polling_places",
+  "description": "Secoes e locais de votacao por ano, turno, UF, municipio e zona. Coordenadas ainda nao disponiveis no pacote.",
+  "source_type": "consolidado_tse",
+  "source_format": "duckdb_sql",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [
+      "round",
+      "city_id"
+    ],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 6219,
+  "file_count": 53,
+  "bytes": 2685607,
+  "files": [
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00019/page=0001.json",
+      "rows": 132,
+      "bytes": 56458,
+      "sha256": "C113971840C287A5F99E99E5DFB36EFCD2FC0F53CEA4EB52145C73C8BC312F38",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00019",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00035/page=0001.json",
+      "rows": 1306,
+      "bytes": 560444,
+      "sha256": "514B250D22183B06C1BE0A2956C3383894DBB3294C818658642B9F5B1A8B5F94",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00035",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00051/page=0001.json",
+      "rows": 349,
+      "bytes": 150526,
+      "sha256": "20DF91C94CDC29F81A0AB83E26ED97B26F45BD80695EA2AD00EB4503B6E236D6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00051",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00078/page=0001.json",
+      "rows": 283,
+      "bytes": 120515,
+      "sha256": "412C256C84F7C747DCE6625AEC0DF803C8C4C70F35CF9892AD9FB037187E0521",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00078",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00094/page=0001.json",
+      "rows": 255,
+      "bytes": 109022,
+      "sha256": "D56C704889352203C27F43FBC0706A0B91307C5CCD067E2D862D97C9C9319916",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00094",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00116/page=0001.json",
+      "rows": 127,
+      "bytes": 54809,
+      "sha256": "5661AFD3A97BBE92F9AA6D4601A685BD511FC8A2D299A19256635BD0B4173298",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00116",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00132/page=0001.json",
+      "rows": 257,
+      "bytes": 108330,
+      "sha256": "F0FF53A9BCABE639AB2EBFE0BB419742FA388461029FA0E51AD27494E603B191",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00132",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00159/page=0001.json",
+      "rows": 166,
+      "bytes": 70124,
+      "sha256": "D4D93154FF773AE361C646111D1ACC56B7B3EBE958BA992CEEA4F883FEDFF465",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00159",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00175/page=0001.json",
+      "rows": 117,
+      "bytes": 51552,
+      "sha256": "1A56EC329B40A56CC4FB4C0F0FF2A4B8FC7D09F3B11403DA96826B523DAF3CA3",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00175",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00191/page=0001.json",
+      "rows": 79,
+      "bytes": 35315,
+      "sha256": "EF329AC3CDDE9E9FA6761A22D45C4395BD233E6B21FF61C72F508DB4A9ABD3A5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00191",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00213/page=0001.json",
+      "rows": 37,
+      "bytes": 16074,
+      "sha256": "84DD3DE0FAB2BC85EA33A4E67C381B4CC256761442E0D5B69D0180FAB20AC7B6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00213",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00230/page=0001.json",
+      "rows": 99,
+      "bytes": 43385,
+      "sha256": "C0E6228D5271B1561CDF10C23820AEC70565598EEBA40BA6980118AF011F3DB8",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00230",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00256/page=0001.json",
+      "rows": 96,
+      "bytes": 41572,
+      "sha256": "3C374705E8FC37B8ABDBA91193E43717E4B8AC8AC4F873C38A8ABE6FC85993F6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00256",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00272/page=0001.json",
+      "rows": 61,
+      "bytes": 26247,
+      "sha256": "F69B1EA7C8105FF72A755EC0664A4ABA78BBC9769D83173B0CBA82B625176AF4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00272",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00299/page=0001.json",
+      "rows": 164,
+      "bytes": 72038,
+      "sha256": "4FE1D6B27AE83AE96ABA0132143556985B6855767921901F97242740BA86315E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00299",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00310/page=0001.json",
+      "rows": 80,
+      "bytes": 36065,
+      "sha256": "91A9A496B564D0556C444B8690DC48DF21751A46A363BE39F3A1E1858F7E561B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00310",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00337/page=0001.json",
+      "rows": 66,
+      "bytes": 28813,
+      "sha256": "CA93A2B2FDBB2B50B5122DEF8416C2BC7B472FB01884B64CCF03859E18BD5FCE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00337",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00353/page=0001.json",
+      "rows": 34,
+      "bytes": 15218,
+      "sha256": "062C5C853A545A38A42ACEEF9F8FBD5E8438A46A7F15B3CF394A132E6B3A2221",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00353",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00370/page=0001.json",
+      "rows": 51,
+      "bytes": 22859,
+      "sha256": "E5FF44721E2F5A9247C67F6748F7788959B15386AFDAED5FB3A9890FDA62371E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00370",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00396/page=0001.json",
+      "rows": 100,
+      "bytes": 43739,
+      "sha256": "3F746111788CCF1AEF1B4378E2BA4D9032D69E85595DE59A10B0B98A27035ACF",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00396",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00418/page=0001.json",
+      "rows": 58,
+      "bytes": 25521,
+      "sha256": "030C2E518C93F0E9CBFA5131AC36F4C17CB145E39E59E484A0352DFC1BB19112",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00418",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00434/page=0001.json",
+      "rows": 76,
+      "bytes": 32389,
+      "sha256": "9BE83AF9F08DF1BD9730B8DAFFB322ADE730CE241D2C84D90EEA9DB0B274F03F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00434",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00450/page=0001.json",
+      "rows": 24,
+      "bytes": 10395,
+      "sha256": "04A70ABA974F0A3CC0B7AFC0347DC6999AE3A674DD56AAB39C9969EE95A9A461",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00450",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00477/page=0001.json",
+      "rows": 74,
+      "bytes": 32353,
+      "sha256": "4784349AF4AAB6738BF4B0F79BC2B3CC1A5569C0ABF4DF28415709D510E55338",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00477",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00493/page=0001.json",
+      "rows": 25,
+      "bytes": 10907,
+      "sha256": "B75B87EC1B6CC95380D7C3BDAAD405E666BC363D7E51D8DE43BE01499663E26A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00493",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00515/page=0001.json",
+      "rows": 30,
+      "bytes": 13500,
+      "sha256": "C34611BC749643F87774673D3DF3F469E803338A61FB89E8AE629F579AACE1EB",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00515",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00531/page=0001.json",
+      "rows": 12,
+      "bytes": 5402,
+      "sha256": "1E8BE6ED9B1B5E85102627B5DC18C2020413BC83453B0F0D305DB2D54364ACD9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00531",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00558/page=0001.json",
+      "rows": 27,
+      "bytes": 12009,
+      "sha256": "37B090DAEA4EB3BE1D68EDE6E63D42AC6C1742D6A012BE1D4CEB2E67F7E968FA",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00558",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00566/page=0001.json",
+      "rows": 35,
+      "bytes": 15066,
+      "sha256": "5B87CD7599E38C43871CDA8A646F2B0F1A73A0A7452E55812D500C98BE21D99F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00566",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00574/page=0001.json",
+      "rows": 35,
+      "bytes": 15525,
+      "sha256": "2D052768150E482EA7FED36E7CCD899D56D6125BEA6511049CB4BD7E9C772771",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00574",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00582/page=0001.json",
+      "rows": 38,
+      "bytes": 16478,
+      "sha256": "9C021A527CAD4C82872EA79CF8A9199D2944193E7AFD45DD6CA71972B7F8F775",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00582",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00590/page=0001.json",
+      "rows": 32,
+      "bytes": 13812,
+      "sha256": "30AF0593D9E27741DAC20EE1AA172900AC886C1CE93707950BF69D74E1FF24E4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00590",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00604/page=0001.json",
+      "rows": 26,
+      "bytes": 11399,
+      "sha256": "2675E637647BB7709C8065BD21F638A9EB663A1A00CBEBB347C54F1501350196",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00604",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00612/page=0001.json",
+      "rows": 32,
+      "bytes": 14334,
+      "sha256": "71A46863C68C86AD2FD3F3994B03A84D5ED369B9045328F636C2A2DF2B11F36F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00612",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00620/page=0001.json",
+      "rows": 18,
+      "bytes": 8049,
+      "sha256": "6D854D9C10CA54643D66A3C197AED83A5B31464A5EB7F3633ACE359E52E0B242",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00620",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00639/page=0001.json",
+      "rows": 45,
+      "bytes": 19782,
+      "sha256": "BE3A915D52D187D10AE3E47B4EADEB62CE09DFE4902BBAED6D439D9CF592B839",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00639",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00647/page=0001.json",
+      "rows": 13,
+      "bytes": 5745,
+      "sha256": "0038C56E7ECDCE07FB77DE3884CE94F377C62E07F3DB8342B631178163536FE2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00647",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00655/page=0001.json",
+      "rows": 29,
+      "bytes": 12538,
+      "sha256": "75C06B276369AED9C6AA571015488EB5043230D98D3D94438D7A9C985314BFB0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00655",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00663/page=0001.json",
+      "rows": 40,
+      "bytes": 17489,
+      "sha256": "62BD6E1B30B5060FCF180846051AF0B9B06ACB5129088FB6791A8BDE8BF454C9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00663",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00671/page=0001.json",
+      "rows": 29,
+      "bytes": 13108,
+      "sha256": "E04FDCFB26D92394B0BB725EBD949378AD1B34374AF2F7870B2B725239FE5E97",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00671",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00680/page=0001.json",
+      "rows": 40,
+      "bytes": 17314,
+      "sha256": "C188FEC28C01E4F71CB83672CD6552B0536A5F2A88999D7C74A1303587871591",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00680",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00698/page=0001.json",
+      "rows": 23,
+      "bytes": 10172,
+      "sha256": "A97D1B383B5E5325E610BEAE1DD10514CB95EA29CB4672707879A82544BE665D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00698",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00701/page=0001.json",
+      "rows": 17,
+      "bytes": 7329,
+      "sha256": "5310E37CF0A71DA533041B0723326AE8F0802099DEDE4306F6E403DE69B347EA",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00701",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00710/page=0001.json",
+      "rows": 26,
+      "bytes": 11505,
+      "sha256": "DB44BBB5FD4A2D8EE6801C4AEF9DBD55697C20C48D4F352A40E5D41D12219BE7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00710",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00728/page=0001.json",
+      "rows": 13,
+      "bytes": 5949,
+      "sha256": "5BCE4BEEC32554ED5B81478FD49F456B79FB567856EA6B4121FACA4030BD149D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00728",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00736/page=0001.json",
+      "rows": 31,
+      "bytes": 13753,
+      "sha256": "B4850D97E8BD594A27271B8BA3006F9157CB83654402AB81CBF66AAFBB7B159B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00736",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00744/page=0001.json",
+      "rows": 23,
+      "bytes": 10051,
+      "sha256": "AE2407267D312BCA8E374681C8435CC42FF0E9A2014E69BF36A7A152CDE224B8",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00744",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00752/page=0001.json",
+      "rows": 16,
+      "bytes": 7040,
+      "sha256": "B8A810779C74A44D135C8FB74ED3F4532ABD3821F3E4A0479E0CFFFEA7027F06",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00752",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00779/page=0001.json",
+      "rows": 81,
+      "bytes": 34388,
+      "sha256": "1B02C766E781EC5147B4D25BF36ACA2C5A7609E06C255550705888576C9BD8B7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00779",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00787/page=0001.json",
+      "rows": 8,
+      "bytes": 3696,
+      "sha256": "E84C56E53FCE6ADB0CA512F96FD4356CF5B2C820733FBA7732E445F82DC03613",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00787",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00795/page=0001.json",
+      "rows": 46,
+      "bytes": 20655,
+      "sha256": "2046911A1DB9AA81BFED0FB9F6D7051A70730BDE284A07EFC53A8C64CB8B0B8C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00795",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=1/city_id=00809/page=0001.json",
+      "rows": 32,
+      "bytes": 14405,
+      "sha256": "FF319716ABC87503BD50B144B0D948ABC0C39854021DB65CEFE21CAA9CBE79F0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 1,
+        "city_id": "00809",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/polling_places/year=2024/state=RO/round=2/city_id=00035/page=0001.json",
+      "rows": 1306,
+      "bytes": 560444,
+      "sha256": "8083FEDE231A39F27622D814EE777CE6AD8EFD95B28364DF65E4C98B33580177",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "round": 2,
+        "city_id": "00035",
+        "page": 1
+      }
+    }
+  ]
+}

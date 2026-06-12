@@ -1,6 +1,6 @@
 {
   "schema_version": "web/v1",
-  "generated_at_utc": "2026-06-12T08:39:40.744060+00:00",
+  "generated_at_utc": "2026-06-12T15:33:51.206681+00:00",
   "status": "local_ready_remote_publication_pending",
   "package_scope": {
     "years": [
@@ -25,10 +25,10 @@
     "source_manifest": "C:\\PolIntel\\base_consolidada\\v1\\publication_lovable\\publication_manifest.json"
   },
   "counts": {
-    "surfaces": 8,
-    "partition_files": 16,
-    "rows": 32825,
-    "bytes": 16026685
+    "surfaces": 13,
+    "partition_files": 348,
+    "rows": 441185,
+    "bytes": 181290178
   },
   "limits": {
     "max_rows_per_file": 5000,
@@ -39,37 +39,37 @@
       "path": "indexes/years.json",
       "rows": 1,
       "bytes": 119,
-      "sha256": "C2A25255616757B26AE8F49E3B83A8E99A7A9220CA704B8F53127A9FA62D0B5F"
+      "sha256": "6DDB696A274C657AEABEBA5EDF4763A39A3C7FCAB6DCC5199FBDE2F1D8E5BB93"
     },
     "states": {
       "path": "indexes/states.json",
       "rows": 1,
       "bytes": 132,
-      "sha256": "46DCF9D132D5358B4D98F37AA33F0DB569508DF248B51C301813749F40229658"
+      "sha256": "D17C42CB0A4DB3F911972574193E5A0F1A296D5558ABD36773A49FFF907D055F"
     },
     "cities_by_year_state": {
       "path": "indexes/cities_by_year_state.json",
       "rows": 104,
       "bytes": 7744,
-      "sha256": "D7AB38EA591FECD805CC7F99B2A258CDAFF23BA01CFA2506E03776288519024A"
+      "sha256": "C4648A0008D4B6C24D04BF8A276A61B8E933FABB76A541180157016B446329D0"
     },
     "offices_by_year_state": {
       "path": "indexes/offices_by_year_state.json",
       "rows": 2,
       "bytes": 233,
-      "sha256": "9F04EEC359768920A6DA1DE1F71BC3C5980FAC054AC31948BC7EFD2863A00548"
+      "sha256": "747E60C8119A45C18F635694B5DE0CD1CB70F860C485E8A4E60534BF7A26D72C"
     },
     "parties_by_year_state": {
       "path": "indexes/parties_by_year_state.json",
       "rows": 24,
       "bytes": 2489,
-      "sha256": "1EA4DB572C0D0A241F0E6EFC340FB67700DE6555FAE9B8BE5D4466C883DC9008"
+      "sha256": "66216B659ACFA9A61E71E391309F3169D6DC2D6ACAC4A3E7FE6E470EDA7624DE"
     },
     "candidates_by_year_state": {
       "path": "indexes/candidates_by_year_state.json",
       "rows": 8039,
       "bytes": 1788343,
-      "sha256": "288E8F71D6BFADB795C884D31926FBA9AE899914DC7722EA1D0C987128645293"
+      "sha256": "648C64504F5BF62AB2EE4EC993D38DCD9D3C9AD73E1B856C146C5EF0575B0793"
     }
   },
   "data_dictionary": {
@@ -87,7 +87,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 33710,
-      "sha256": "F18CE2AD698D487A9A3D93835036B58CA43BFE90FEEB6C08A8719D9F4050B2A5"
+      "sha256": "9762F5F1A86D7A6AD11FFDB4F53F9183A08F317F0DD553EB84971F76F9A39203"
     },
     "indicator_city_summary": {
       "surface": "indicator_city_summary",
@@ -98,7 +98,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 49533,
-      "sha256": "05FD53EEA812A641CDC75A69F3E79E2C59C1AC97DE8A54D87F90CC87F64741BD"
+      "sha256": "6D739DAA4DF83CE5838BDA11AEF648DF6F6AFF8F3F3A00A40257C1ABCE400E2F"
     },
     "party_results": {
       "surface": "party_results",
@@ -109,7 +109,7 @@
       "row_count": 680,
       "file_count": 1,
       "bytes": 241600,
-      "sha256": "320C64E48CAEBCF61314BE84505ADB1ED10A332FC2565BB8AF5A7A766696BDB9"
+      "sha256": "05EA916F30653BC4B6FBE501B6C9A9BFA196F6BD0027AB46BDAD9E5903CA3B26"
     },
     "election_results": {
       "surface": "election_results",
@@ -120,7 +120,7 @@
       "row_count": 4492,
       "file_count": 3,
       "bytes": 2321106,
-      "sha256": "E4F7F702C9D903F84CF2D7B2EB96AB6AA4988924DA16C059615026DB1103D395"
+      "sha256": "D6F796F5D978BAAB9ECE9CE3C3924ED811B3045FA5295181F4B4478709331896"
     },
     "candidates": {
       "surface": "candidates",
@@ -131,7 +131,7 @@
       "row_count": 22642,
       "file_count": 7,
       "bytes": 11639310,
-      "sha256": "974F73C5C04036284C8A3E8A53DF47B7AD6D745F8FC243336CC9F31A31A26A76"
+      "sha256": "29A66FFC461BA11E7041C5987052E86F11FBE3280E8A2500B3DFF095EFE87F90"
     },
     "finance_candidate_summary": {
       "surface": "finance_candidate_summary",
@@ -142,7 +142,7 @@
       "row_count": 4698,
       "file_count": 1,
       "bytes": 1695727,
-      "sha256": "1C27216686784232A406A58400AD4CE1C0AE48319E58F3D6E86194839939523F"
+      "sha256": "498804DD6A9CD23E88024C83BB3AF216B11EE3F2410AC92394354CDF701ECE50"
     },
     "strategic_insights": {
       "surface": "strategic_insights",
@@ -153,7 +153,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 45219,
-      "sha256": "892CBB6DEE5A809E22DE8C68F719A93D1B9526CAF20465B321E8580CCDE4F9A3"
+      "sha256": "90FBA38B28C2243A64BCC65E97317ACB62704231ADCC015F3F2B1F52437C603E"
     },
     "crm_preview": {
       "surface": "crm_preview",
@@ -164,7 +164,62 @@
       "row_count": 1,
       "file_count": 1,
       "bytes": 480,
-      "sha256": "1F6A36EC837B63121792FB115F9118350EDD27C8680A356D41BD15850846FF3B"
+      "sha256": "E52734B1A2C841FEACF7037F7DE4EC314EF3AE63489E2611C487FF3DA79A5724"
+    },
+    "section_results": {
+      "surface": "section_results",
+      "description": "Resultado por ano, turno, UF, municipio, zona, secao, local de votacao, cargo e votavel/candidato.",
+      "source_type": "consolidado_tse",
+      "source_format": "duckdb_sql",
+      "manifest_path": "surfaces/section_results/manifest.json",
+      "row_count": 349871,
+      "file_count": 154,
+      "bytes": 131452415,
+      "sha256": "F3518F55264D9C3558CC66F2728C6E30E2153950F901720A6B450A05579E4141"
+    },
+    "polling_places": {
+      "surface": "polling_places",
+      "description": "Secoes e locais de votacao por ano, turno, UF, municipio e zona. Coordenadas ainda nao disponiveis no pacote.",
+      "source_type": "consolidado_tse",
+      "source_format": "duckdb_sql",
+      "manifest_path": "surfaces/polling_places/manifest.json",
+      "row_count": 6219,
+      "file_count": 53,
+      "bytes": 2685607,
+      "sha256": "647ACAB6CF7409C162CB20E56E15470E1E7C8199E7F892989A1373844D5BB343"
+    },
+    "section_turnout": {
+      "surface": "section_turnout",
+      "description": "Comparecimento e abstencao agregados por municipio e zona. O menor grao disponivel nesta fonte nao e secao.",
+      "source_type": "consolidado_tse_partial",
+      "source_format": "duckdb_sql",
+      "manifest_path": "surfaces/section_turnout/manifest.json",
+      "row_count": 60,
+      "file_count": 53,
+      "bytes": 39210,
+      "sha256": "51ABBB40420DB92BA106B40DD389EE4962D1A961120143B171913DDFFA15EE81"
+    },
+    "historical_city_summary": {
+      "surface": "historical_city_summary",
+      "description": "Resumo historico municipal multianual para analise de volatilidade e evolucao territorial.",
+      "source_type": "consolidado_tse",
+      "source_format": "duckdb_sql",
+      "manifest_path": "surfaces/historical_city_summary/manifest.json",
+      "row_count": 676,
+      "file_count": 7,
+      "bytes": 318030,
+      "sha256": "5165EC62DFA0DE395A3E9E30D8CCBAEDF575F41FBA63011DD1125451C13D60E1"
+    },
+    "finance_candidate_counterparties": {
+      "surface": "finance_candidate_counterparties",
+      "description": "Detalhamento financeiro agregado por candidato, tipo de movimento, contraparte e especie de recurso.",
+      "source_type": "consolidado_tse",
+      "source_format": "duckdb_sql",
+      "manifest_path": "surfaces/finance_candidate_counterparties/manifest.json",
+      "row_count": 51534,
+      "file_count": 65,
+      "bytes": 30768231,
+      "sha256": "208B8AAD806E995D96B86EC9E098F69EFCD47C60F4445B4DDA38A0EC02A491CF"
     }
   },
   "indicator_policy": {

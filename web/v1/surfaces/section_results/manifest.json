@@ -1,0 +1,2180 @@
+{
+  "schema_version": "web/v1",
+  "surface": "section_results",
+  "description": "Resultado por ano, turno, UF, municipio, zona, secao, local de votacao, cargo e votavel/candidato.",
+  "source_type": "consolidado_tse",
+  "source_format": "duckdb_sql",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [
+      "office_id",
+      "round",
+      "city_id"
+    ],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 349871,
+  "file_count": 154,
+  "bytes": 131452415,
+  "files": [
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=116/page=0001.json",
+      "rows": 451,
+      "bytes": 167575,
+      "sha256": "FF3D46B402CB54F88E9AF19CDE0828A42D6F86E0221AA9EE58E578861CD41A26",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "116",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=132/page=0001.json",
+      "rows": 1104,
+      "bytes": 401540,
+      "sha256": "0B31D2DCC10714FAA3654F1BFC26550588590A429F7A40D2482DD49E0C9F22A0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "132",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=159/page=0001.json",
+      "rows": 542,
+      "bytes": 196954,
+      "sha256": "B325A8DE7CD91197C4D1108BEBC42F4E6A1F26CCEE7BE5AC8D8F1A49E45616F9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "159",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=175/page=0001.json",
+      "rows": 485,
+      "bytes": 185396,
+      "sha256": "31D9C41EA69E2D134368F2D1025F3A23C8F14FBC30C1F7BC4B77A4E4EF64642C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "175",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=19/page=0001.json",
+      "rows": 605,
+      "bytes": 222585,
+      "sha256": "D622DAFA4B20ED013BE66CEC3B26CA0324AC34619301629112E0836FAECADF15",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "19",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=191/page=0001.json",
+      "rows": 252,
+      "bytes": 97800,
+      "sha256": "E54CCFB4D82B3326489735BD30DCAB5922806BF9C1AF16404741847CA0065B45",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "191",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=213/page=0001.json",
+      "rows": 184,
+      "bytes": 68575,
+      "sha256": "FCC5FFFB51C1D5DD61843244BE7F023AD2807AA1219615D12B8B167833EB8EB3",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "213",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=230/page=0001.json",
+      "rows": 277,
+      "bytes": 101889,
+      "sha256": "2E05CC531EC44D9A69B00A4EF4B793AF004746510F28D384E17A90F0A8484D2C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "230",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=256/page=0001.json",
+      "rows": 329,
+      "bytes": 122739,
+      "sha256": "C1398AB61BFB3ABB3DC748624A57669FD5D2DD7938E820D746EF4F84CD320E82",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "256",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=272/page=0001.json",
+      "rows": 185,
+      "bytes": 68393,
+      "sha256": "1A7326DA99BE057E5CA5AA6B613E39B91F14E136AD2166F9D75B478A196B7DB9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "272",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=299/page=0001.json",
+      "rows": 917,
+      "bytes": 349730,
+      "sha256": "0DD225DDBF0EE023DE8C48B66C0A07699B9615009F2437ECB965D72C330DA156",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "299",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=310/page=0001.json",
+      "rows": 310,
+      "bytes": 121102,
+      "sha256": "9DB484F25E06243029B3FBDD0A686EC87ED8D1C18225385427AE41473042C070",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "310",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=337/page=0001.json",
+      "rows": 197,
+      "bytes": 75407,
+      "sha256": "C088A5C9C911423D00E69BB8BF033E080E9329C16D58B20D6E230D0E4548B2AE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "337",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=35/page=0001.json",
+      "rows": 5000,
+      "bytes": 1860183,
+      "sha256": "32BC16392179BF104CA8A3D36EACF9DBDD20A5215F052B4D47898BC5C9449969",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "35",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=35/page=0002.json",
+      "rows": 5000,
+      "bytes": 1859550,
+      "sha256": "47E6847272CFA3151B08F3467E276795D98F0910C8CC5BC253EB91A4917D9CDF",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "35",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=35/page=0003.json",
+      "rows": 343,
+      "bytes": 130677,
+      "sha256": "C6967989127DFB4832297EE20222C24267969633AF893536DE78466AE91B8199",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "35",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=353/page=0001.json",
+      "rows": 84,
+      "bytes": 32273,
+      "sha256": "0EF6C5A35E879CCB532AA72BDE53702254A0FA6DAEF73B79F2AABC1BD0D93666",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "353",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=370/page=0001.json",
+      "rows": 226,
+      "bytes": 87552,
+      "sha256": "B5D2685BE924BCF068D8A51555A885A2123C8B865B87326602332862B4F36162",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "370",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=396/page=0001.json",
+      "rows": 563,
+      "bytes": 213575,
+      "sha256": "EC8FF007FDAA64D07A44499638F98745C5B48BE00D08F30648A4F55CA1D58FD8",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "396",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=418/page=0001.json",
+      "rows": 287,
+      "bytes": 108878,
+      "sha256": "87C8C4C7D529A3559647F7F246CAF432BB83DED623412370E56C95E5EC6FB7C6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "418",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=434/page=0001.json",
+      "rows": 333,
+      "bytes": 121807,
+      "sha256": "59007211EFE10A9DE10B739C4A28C1A64B53E4EBA5BA7E55037C2D54C83CA09B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "434",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=450/page=0001.json",
+      "rows": 66,
+      "bytes": 23928,
+      "sha256": "604552C161A9EFF8C7E282DE15DAB2E3923DBC3FAF99CE85E0F01D4C74D26314",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "450",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=477/page=0001.json",
+      "rows": 424,
+      "bytes": 160275,
+      "sha256": "031B2A9DC1358A99F2D7F3E01CCD3AF8F5E75637B6E9DC466FD72E54B88B3001",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "477",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=493/page=0001.json",
+      "rows": 90,
+      "bytes": 33471,
+      "sha256": "C192D02140B8AC02B79F81C5454D6C2C0BD2EEAB4D3AF0D81F103083E1CEBB60",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "493",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=51/page=0001.json",
+      "rows": 1507,
+      "bytes": 560051,
+      "sha256": "59E25A9F2B80260DF84E287F2D40BB24A1979ADE152212EB9DC9F9D304C32FB5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "51",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=515/page=0001.json",
+      "rows": 83,
+      "bytes": 32069,
+      "sha256": "F81D2E121A17140F988EBCA148DF8A1410022F32FC2692690C0F88A1D838B586",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "515",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=531/page=0001.json",
+      "rows": 58,
+      "bytes": 21892,
+      "sha256": "1C2AFEC6574B0C4D93070843C69EECFE45A952EBD18D317CF74FFCD540D94E35",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "531",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=558/page=0001.json",
+      "rows": 109,
+      "bytes": 42106,
+      "sha256": "57005CD0020FA0E933676D0F0A20E84C38397FBC6F2E272006AEC854970C0829",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "558",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=566/page=0001.json",
+      "rows": 259,
+      "bytes": 95451,
+      "sha256": "DD97B7EC2D0D624D7629A26E1804386E228B86ED1FD53CE1E583EB667065F690",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "566",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=574/page=0001.json",
+      "rows": 161,
+      "bytes": 61712,
+      "sha256": "057924A5D1F4D29930F975633A8EA019781034CA95B16309F7D68CC445C6E467",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "574",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=582/page=0001.json",
+      "rows": 137,
+      "bytes": 50932,
+      "sha256": "F7C75748E06689AE11F938E83E4BF0EE0501EFEE151C6E52C112352118DDF1B1",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "582",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=590/page=0001.json",
+      "rows": 115,
+      "bytes": 42397,
+      "sha256": "0EA6FFAF051F72237B1990D97B171B226FCCFA7A4007163ADFC74094073D9F16",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "590",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=604/page=0001.json",
+      "rows": 122,
+      "bytes": 45686,
+      "sha256": "0D7A1920011D3DE90C4079ED8D18C8367BE3EFBA4337C3AFB44B086B9DE4AAFA",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "604",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=612/page=0001.json",
+      "rows": 128,
+      "bytes": 49263,
+      "sha256": "E5EE3E9237CA2F129E3A0ADE00362D6D44C6FCFDA64104B1083F583F78D5CB16",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "612",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=620/page=0001.json",
+      "rows": 64,
+      "bytes": 24173,
+      "sha256": "69AD599CB1AA9A4CE6B275BE1B04F7D72A0C65703C79224F07A93257681E2215",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "620",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=639/page=0001.json",
+      "rows": 200,
+      "bytes": 75517,
+      "sha256": "A8722EE37D6534A05F12603D06B39DA023C55576F3FF80464644A3408ED3CD73",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "639",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=647/page=0001.json",
+      "rows": 60,
+      "bytes": 22236,
+      "sha256": "94102654B30105259BBB80AA102847E127D9D3EE28744EAA28FD0F7B90D589D4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "647",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=655/page=0001.json",
+      "rows": 63,
+      "bytes": 23149,
+      "sha256": "430B5A26754F58867362BE340546C4B0AFF48FCC601A8DC4AD95197809F4B040",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "655",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=663/page=0001.json",
+      "rows": 151,
+      "bytes": 56559,
+      "sha256": "5483AB8FD23C02A612D39096545756C072F2AE4FB67C30180A603FA9921DAF5A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "663",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=671/page=0001.json",
+      "rows": 192,
+      "bytes": 74605,
+      "sha256": "F5DA36D5DEFC0BA2C486D814EACA5EC3B38EE6A33DCB4CECD9C87DE63E2EF0C1",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "671",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=680/page=0001.json",
+      "rows": 150,
+      "bytes": 55382,
+      "sha256": "9EFD125411AEA0B4F882174706DCF75D7FF39E87F56CD8500A6B8A1AA7596B4C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "680",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=698/page=0001.json",
+      "rows": 107,
+      "bytes": 40349,
+      "sha256": "23157B0D10CCFFDC972AC724FDB2F04573AA0CBD1F66897A894ED96CF095C112",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "698",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=701/page=0001.json",
+      "rows": 72,
+      "bytes": 26177,
+      "sha256": "006E951FB577C202A71DAC776FE6F13012482A770AC444DDA111A829088FA16C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "701",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=710/page=0001.json",
+      "rows": 65,
+      "bytes": 24645,
+      "sha256": "06BF157BFAF3041318E54A1CED637EF328317F8BAE8C2574B0D5C96A160B88E4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "710",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=728/page=0001.json",
+      "rows": 66,
+      "bytes": 25466,
+      "sha256": "7AE40E4FE28246886FC711EDF111059FB0DF3FC3AA78690E92AB220A5F99AEED",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "728",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=736/page=0001.json",
+      "rows": 120,
+      "bytes": 45572,
+      "sha256": "30128C3FBDC4A72E4C64F71B209C0B5C2329A4AB442390BCC0B827183F08DCDE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "736",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=744/page=0001.json",
+      "rows": 78,
+      "bytes": 28950,
+      "sha256": "5F85638E3F13FBF2DB22E370437BD8E6F5AD9768838AA41F8A60B59F849A7AA3",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "744",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=752/page=0001.json",
+      "rows": 74,
+      "bytes": 27517,
+      "sha256": "14D042125BFE209198F595F57841AC25063AA963A37E490FF0AB46566BB8C872",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "752",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=779/page=0001.json",
+      "rows": 387,
+      "bytes": 141162,
+      "sha256": "9C61B095885ACDBA3F5E1C4767CE96C4B9C614F77E56E7D988EC7AE701D3A15B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "779",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=78/page=0001.json",
+      "rows": 1309,
+      "bytes": 480194,
+      "sha256": "808B40DC4226466B68204D529965DA134DE38B9BFD76CE77DAC003FC60257D0D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "78",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=787/page=0001.json",
+      "rows": 29,
+      "bytes": 11113,
+      "sha256": "E0521D03BD5115D7C1DDAFDEA64199C76B778ED35C45FE479E8D9416DA665E56",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "787",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=795/page=0001.json",
+      "rows": 175,
+      "bytes": 67747,
+      "sha256": "7407A4349E53BC22342ADBB851D56C3C229383F15BE70D0682591F93C3237B57",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "795",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=809/page=0001.json",
+      "rows": 125,
+      "bytes": 48270,
+      "sha256": "535189D2E9DD2557BAFBC78C1773CB337D15DC445058880922DEB4D013662682",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "809",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=1/city_id=94/page=0001.json",
+      "rows": 1120,
+      "bytes": 413460,
+      "sha256": "6B22E1562CDD3C98DEFDFDCF97E89383E0D4FF5B98F4A440EB64CE2FAF46214E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "city_id": "94",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=11/round=2/city_id=35/page=0001.json",
+      "rows": 4639,
+      "bytes": 1716087,
+      "sha256": "8CF27576AB277319CF5D219124FCC8D065290F0D4FF3B04868BF2AA7F54E9B28",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 2,
+        "city_id": "35",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=116/page=0001.json",
+      "rows": 5000,
+      "bytes": 1884425,
+      "sha256": "EC556A8FC5FF2A2285F4121489D04EE985AF114CFBE2D0275CC6606E97ECDB43",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "116",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=116/page=0002.json",
+      "rows": 1050,
+      "bytes": 393583,
+      "sha256": "3EC7160896F49B3F26D2E677C853584607374151C8DB8BBA2702D08D490E6A1C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "116",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=132/page=0001.json",
+      "rows": 5000,
+      "bytes": 1837918,
+      "sha256": "54CF5FAEA9E3C2C278DD02D8A202BDF80C1703E5764CFFCBF713E67358188443",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "132",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=132/page=0002.json",
+      "rows": 5000,
+      "bytes": 1835100,
+      "sha256": "3BFCEC2DBB4FB11D51AA3EE37BA2F91A159F38D28A6B74772EFB338EFEBF114D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "132",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=132/page=0003.json",
+      "rows": 5000,
+      "bytes": 1855628,
+      "sha256": "992FC0BED0BF2401C728B2C3AC375B7BBED21B9EE2C1E63A500B5A37CD51AE8F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "132",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=132/page=0004.json",
+      "rows": 1602,
+      "bytes": 589687,
+      "sha256": "DC56FBBFF9CCD63B2107495E5B988ACB961F6B1BE8F21DF42BC72492D7CF9BA9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "132",
+        "page": 4
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=159/page=0001.json",
+      "rows": 5000,
+      "bytes": 1846797,
+      "sha256": "5738079AAF9787D910FA8E2E3FF036C0075885D60F1668A2FC317C29B71159DA",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "159",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=159/page=0002.json",
+      "rows": 4321,
+      "bytes": 1593960,
+      "sha256": "B08A888F256BFB9F27F1BF09437FE04EF47384437CB25E7B09ACEDABB8EBDFAD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "159",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=175/page=0001.json",
+      "rows": 5000,
+      "bytes": 1936254,
+      "sha256": "731A2A7B532F291F28D9E35B9669BE099349593C856E34D1C3AA610A4E2B4941",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "175",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=175/page=0002.json",
+      "rows": 727,
+      "bytes": 276867,
+      "sha256": "B5E3B3BADC77569B54E995BA26049882C78093FC2050E11A8D1969DB0F0C8942",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "175",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=19/page=0001.json",
+      "rows": 5000,
+      "bytes": 1868504,
+      "sha256": "8E2B350E1E7093EA3C4A4551FD7B1726521A328C17F769B4CEA757893E84D165",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "19",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=19/page=0002.json",
+      "rows": 3010,
+      "bytes": 1109330,
+      "sha256": "D0783BA3D63C6DCC57688FAD5EA61354301C264F8258CE460329FBC28569ADB9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "19",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=191/page=0001.json",
+      "rows": 2585,
+      "bytes": 1009559,
+      "sha256": "76551D3B4E45212D7B0520B4035FBAFB98E62107904AD81BD17A358024095AB0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "191",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=213/page=0001.json",
+      "rows": 1357,
+      "bytes": 509823,
+      "sha256": "DF9DE911A3F3DA73F8289559859C2482A2995A8713BD95EE62CF6CE3444F4E33",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "213",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=230/page=0001.json",
+      "rows": 2712,
+      "bytes": 1005495,
+      "sha256": "BA95E05AB42F1337C2A6E16D2D20CEAA52620AD77AC8862522E9B74693B2E6EB",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "230",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=256/page=0001.json",
+      "rows": 4518,
+      "bytes": 1707807,
+      "sha256": "2E20CD8BB1C6F486710CDCE97E862BF41FF45C776AC67154BF20D0387E3AF58A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "256",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=272/page=0001.json",
+      "rows": 2413,
+      "bytes": 903486,
+      "sha256": "B0FD9335340D089815A9372DDA47CDC917D6D4FEA8EE42C2CE4E600B0576D44F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "272",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=299/page=0001.json",
+      "rows": 5000,
+      "bytes": 1956162,
+      "sha256": "5B6379B00C5F8221E95CBE072FC61B04E7ECACEE1AF0A4CBA58FFD8FF6E4C21E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "299",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=299/page=0002.json",
+      "rows": 5000,
+      "bytes": 1901356,
+      "sha256": "B970DB4EFFA33689395DD08F9CC19FCB721A5145AE6A54EC36823DA14217B60E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "299",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=299/page=0003.json",
+      "rows": 355,
+      "bytes": 136179,
+      "sha256": "ED5F7787116DC771C8ED944FD1783D33C0A519387FB563E9013447A7F83AD331",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "299",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=310/page=0001.json",
+      "rows": 2929,
+      "bytes": 1154495,
+      "sha256": "5DC2C2F22A36AC3006E2ED2F15495D33551D2F70DBDDD82CE4ABF540902FC7C9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "310",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=337/page=0001.json",
+      "rows": 1312,
+      "bytes": 506172,
+      "sha256": "93EAEB1892A50A63AF84D594337A9DFB71D0C01A985DA531860B53B29AAD6CB3",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "337",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0001.json",
+      "rows": 5000,
+      "bytes": 1857672,
+      "sha256": "6AE3954930C582EE4F202E4461E39AFBF4AFDB7C42AE7502113D9CBEB7A035C0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0002.json",
+      "rows": 5000,
+      "bytes": 1850826,
+      "sha256": "1FC08D4422F25309442293C9C81F0132058C38B599D56F4C3FD7AE10349F3B9D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0003.json",
+      "rows": 5000,
+      "bytes": 1821897,
+      "sha256": "44D58B1417276E49E6C05F726132B21DD1B18A597A8F29C9231334C982885DBB",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0004.json",
+      "rows": 5000,
+      "bytes": 1850718,
+      "sha256": "1EE977BE7E8001D5764067DECD8B745B4552BC47CC615CCF5F4A481E1AC77EA6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 4
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0005.json",
+      "rows": 5000,
+      "bytes": 1865303,
+      "sha256": "E5F5493520EAE2A91E475BDFA1AEF5C20FE7F8DF3FC37D26B56C6D649FF80ED0",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 5
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0006.json",
+      "rows": 5000,
+      "bytes": 1924215,
+      "sha256": "4BBECE1533FC390712B13AA00A9D9B6719C52C3E6335180FDDDDA1033EA3DB8C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 6
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0007.json",
+      "rows": 5000,
+      "bytes": 1891391,
+      "sha256": "3B57CDE3514176D39EAA62F658F4C1C514DB00048D89C2AAD0B9345813B66E6C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 7
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0008.json",
+      "rows": 5000,
+      "bytes": 1900422,
+      "sha256": "217A95CAEAC04A82CD426473F64A12F528CCCF81E4C87CEB998DADC75F076A2A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 8
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0009.json",
+      "rows": 5000,
+      "bytes": 1935139,
+      "sha256": "94D191B1FADA1469D4E2589691FADE5DAD2033D50F0A1F0E28E7F9DA22223C09",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 9
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0010.json",
+      "rows": 5000,
+      "bytes": 1891700,
+      "sha256": "28876891FACA5C12866F2CC4617354FAFB2C46E9B06F53192E147160DE6D5443",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 10
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0011.json",
+      "rows": 5000,
+      "bytes": 1869602,
+      "sha256": "5900BCD59F0010AF996A953EA92270EE37DA2829F7C1DA5F868AE80D188329C5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 11
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0012.json",
+      "rows": 5000,
+      "bytes": 1858839,
+      "sha256": "F73CB4362B2A15CE326477660AD519FEF11DA3FE19DC0498B4AF0930CDEA718A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 12
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0013.json",
+      "rows": 5000,
+      "bytes": 1913435,
+      "sha256": "65F40798655498F8B4855311E19F95211E43D773800E5F6ADC8F4A656362E221",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 13
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0014.json",
+      "rows": 5000,
+      "bytes": 1845028,
+      "sha256": "008D6C941E18D0A9EF3D7E476AF8F56AFBDDF9748959396971FCDD5EF48C6E8E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 14
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0015.json",
+      "rows": 5000,
+      "bytes": 1868164,
+      "sha256": "9B2C8AD3C3929F0FDDDF07F4F76CD2FB32CB6382843E090BF089D5FE740D0926",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 15
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0016.json",
+      "rows": 5000,
+      "bytes": 1863281,
+      "sha256": "0EFF706401149FFA4619BAA9F12549E09CEB75D9A3B3556980BEE9AC8E91405A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 16
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0017.json",
+      "rows": 5000,
+      "bytes": 1859364,
+      "sha256": "C9398E3DAE8512E15EE949A39C5804E4BB7AC963DB5D25B1F2509ECFAEB9CCBE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 17
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0018.json",
+      "rows": 5000,
+      "bytes": 1853500,
+      "sha256": "2AAF9BE5D0712574712242B6641BC132DA349D418CC1CEDF09CEB534C521F8F1",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 18
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0019.json",
+      "rows": 5000,
+      "bytes": 1879703,
+      "sha256": "BF270DFC94C52011F19117DD5ED70FCFEA5D2B8162E220D564D54FCA5D8BC459",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 19
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0020.json",
+      "rows": 5000,
+      "bytes": 1868048,
+      "sha256": "A4EDF5A94C1E0BEB3A4423920CE7E53A5651A44C73151937BB575D9A0F03E842",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 20
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0021.json",
+      "rows": 5000,
+      "bytes": 1854982,
+      "sha256": "CFE082B72AF1B926776D01DA6C4AF42CCCD9FE3DFCB4E487568E16D4234BD1E2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 21
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0022.json",
+      "rows": 5000,
+      "bytes": 1864918,
+      "sha256": "05FFAA091E0AE3022C207671CAD66C638D1863F81B88F43FE6C0D623EA0D71D9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 22
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0023.json",
+      "rows": 5000,
+      "bytes": 1877359,
+      "sha256": "D45F2C1A9D5DD497BA0A2E590C11E5F181C4BD3D3DC79BD0C5F39530931320AE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 23
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0024.json",
+      "rows": 5000,
+      "bytes": 1908912,
+      "sha256": "9640D352E676B2F348B3826C1817B87F1D1308B28FB7E2C241C6C515352FD4D2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 24
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0025.json",
+      "rows": 5000,
+      "bytes": 1902068,
+      "sha256": "7BB266FB0679256715DDB655BF98AA30BCCDA48786341A76FD93F1C728EB7584",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 25
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=35/page=0026.json",
+      "rows": 3832,
+      "bytes": 1449077,
+      "sha256": "4B8BE5369538F697F9104B5DDA3FBDB55B04C33647EB76CDCDF25986C2F6CA52",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "35",
+        "page": 26
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=353/page=0001.json",
+      "rows": 641,
+      "bytes": 248516,
+      "sha256": "4C5633FF87CCB092DECD46D36E47F5F9D5D38562AC41A46B0AF3F5DE30422992",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "353",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=370/page=0001.json",
+      "rows": 2378,
+      "bytes": 930550,
+      "sha256": "AD5509E8B59365E2E0B6BD2D8AA028B10D55C8546E5E516E411E3BC518EB9293",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "370",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=396/page=0001.json",
+      "rows": 5000,
+      "bytes": 1913909,
+      "sha256": "1778B1CD33B205D75AA949BD54FAC68980360C68B6159E3B339525AECCF65BEE",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "396",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=396/page=0002.json",
+      "rows": 164,
+      "bytes": 63128,
+      "sha256": "F8458F06C465CC14F9153A14F14B3736A6125230B4D4E88A6987C8C023586F4A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "396",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=418/page=0001.json",
+      "rows": 3619,
+      "bytes": 1387748,
+      "sha256": "B4530C84C707AA1C1FAECC8A5FC7863D60C5926BA6C5A94AACA76ADF362D5311",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "418",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=434/page=0001.json",
+      "rows": 2929,
+      "bytes": 1083028,
+      "sha256": "7D3E786797B5103C936FA0E9DAF23FBEC856DD68A012828B40BDD0FE90625027",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "434",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=450/page=0001.json",
+      "rows": 751,
+      "bytes": 274300,
+      "sha256": "7A9305383574C04AE36B576EA8CB5D543AD901ABB5B725246C0E50C46FD99CAF",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "450",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=477/page=0001.json",
+      "rows": 4574,
+      "bytes": 1749548,
+      "sha256": "4D771E3599FE0A68BB01CD4157E5ECEDD225405B4B5DBA90F12B345755E15545",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "477",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=493/page=0001.json",
+      "rows": 1372,
+      "bytes": 514270,
+      "sha256": "44A96E90A75DE3723479DFEE5CC89731B0B6AE78BAE532C7849BCE5330F8150A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "493",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=51/page=0001.json",
+      "rows": 5000,
+      "bytes": 1866558,
+      "sha256": "D00BA04F06B653D7D2C2DE8662F8232763A5422F8399BC39A70BCDF1901C1668",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "51",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=51/page=0002.json",
+      "rows": 5000,
+      "bytes": 1887685,
+      "sha256": "D3A1CB733109A90FFF356676D0AD8972C3179ADF6FD1AB6E1BB23E995F0B1F30",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "51",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=51/page=0003.json",
+      "rows": 5000,
+      "bytes": 1873054,
+      "sha256": "D915D23A624C4AEC4E29EA30706C7B21F5CB40DB68520490B796BD0DC9C6BE28",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "51",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=51/page=0004.json",
+      "rows": 5000,
+      "bytes": 1900632,
+      "sha256": "5A91DF1240588824740E2757308B47AE3407F7B62F418EFF5A6A7BC9EF862C27",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "51",
+        "page": 4
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=51/page=0005.json",
+      "rows": 5000,
+      "bytes": 1889954,
+      "sha256": "C52C15E1C78E84F154C707C49C3C2F28847F60EA2485EBEE5F68E6128EB2E499",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "51",
+        "page": 5
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=51/page=0006.json",
+      "rows": 1135,
+      "bytes": 429775,
+      "sha256": "CB464C0F0469BEBA92D38AD3C54570A53D913DFE344A821E1C27CB9631128945",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "51",
+        "page": 6
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=515/page=0001.json",
+      "rows": 791,
+      "bytes": 307667,
+      "sha256": "78CB636AA266DD34720C92C227FA1284F0569A3F15B762CB5AF8E82A955730CD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "515",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=531/page=0001.json",
+      "rows": 504,
+      "bytes": 190629,
+      "sha256": "B60080D0C7C0B8E6D43CBED9E2AEDC74676AEB70672CE3F21F28A6BA444FE5FD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "531",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=558/page=0001.json",
+      "rows": 977,
+      "bytes": 378354,
+      "sha256": "994C140B445B08A77E2812201E6AAFBA46B866A8FC3A1E776C89895BD9D568F1",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "558",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=566/page=0001.json",
+      "rows": 1911,
+      "bytes": 708583,
+      "sha256": "18ED40836ED367EDA5F218C424A22E67561A06989921A34EFF010AA686B25BF4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "566",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=574/page=0001.json",
+      "rows": 1770,
+      "bytes": 682857,
+      "sha256": "1DCD0DA600C4A1D66B1845EE58FAFAA5D83F578CE44C54B5974FABFC848FBED9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "574",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=582/page=0001.json",
+      "rows": 1479,
+      "bytes": 554433,
+      "sha256": "5638916B8F9BF2EECBA662C8C29FF54E3FA7DCC78998F026D4092DDD39E0F27F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "582",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=590/page=0001.json",
+      "rows": 1242,
+      "bytes": 462059,
+      "sha256": "3959285FF0152C70C30F4EA23117A29F04E881C7419E88138A76A20F031DBA13",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "590",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=604/page=0001.json",
+      "rows": 705,
+      "bytes": 265171,
+      "sha256": "C76A7D24772228B12812DF8877E90C31E3CD90424D491295C24319ED2A53B509",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "604",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=612/page=0001.json",
+      "rows": 1079,
+      "bytes": 418112,
+      "sha256": "47556EE9A20991EEBF377ECB5DAF94DFBC23AF476DEBC3BB6B4D78DB29E5576E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "612",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=620/page=0001.json",
+      "rows": 547,
+      "bytes": 207612,
+      "sha256": "2EA8912C8D3B290367701BCEE94275CD5FF52F15D8E6AB8CDBB857CF0F5F9063",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "620",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=639/page=0001.json",
+      "rows": 2329,
+      "bytes": 886859,
+      "sha256": "1A17EFFDC86F59CA4562A375CA6553BAE2D62DC976316433B90B04DBEFED2AC2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "639",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=647/page=0001.json",
+      "rows": 460,
+      "bytes": 170942,
+      "sha256": "49211FA6B169A4EB6F32B441770F0596A80FA6F70A891A60FF5824D08CC7FF4B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "647",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=655/page=0001.json",
+      "rows": 752,
+      "bytes": 278305,
+      "sha256": "124D2C7524855A11366D364D9B2BB7529C7866A022AD61C1E782E858382CBD30",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "655",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=663/page=0001.json",
+      "rows": 1657,
+      "bytes": 626746,
+      "sha256": "36D78B86DA0A3CED3B7D57F7D17EED5237ADA39ED252A6F73F53BCE4D056FC13",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "663",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=671/page=0001.json",
+      "rows": 899,
+      "bytes": 348903,
+      "sha256": "610C5FF951365095BF0A4A0A4F7683CC9D80BF623E21C3B10EE5BF4448F0DB90",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "671",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=680/page=0001.json",
+      "rows": 2013,
+      "bytes": 750886,
+      "sha256": "9F341F285410E6ACE7A01C588618690D3BC620F9F309461DCD468CF2652C9C99",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "680",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=698/page=0001.json",
+      "rows": 1133,
+      "bytes": 428816,
+      "sha256": "31EEB0818BD9C7076FF8CD6644A0673C647DD5AE7C88F5A63F28BDDA244203DD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "698",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=701/page=0001.json",
+      "rows": 477,
+      "bytes": 174185,
+      "sha256": "CC1430270448DC465EF55C17B5B4A153C338C49C68F38D223323644FD4E1F537",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "701",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=710/page=0001.json",
+      "rows": 478,
+      "bytes": 181930,
+      "sha256": "0A558D54F05D0A2CCC58D81C7565192118594EE137BFBFBC1E19EA7569160E8A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "710",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=728/page=0001.json",
+      "rows": 453,
+      "bytes": 175452,
+      "sha256": "1D6553157728F8844F74D835F70725901691036A4D00591A52B5634BB75A46F5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "728",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=736/page=0001.json",
+      "rows": 1326,
+      "bytes": 508860,
+      "sha256": "B992F4E5A1068D674B734BB8C2FACEAF1147F3C9208D5C0F49C1F339E53C8E85",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "736",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=744/page=0001.json",
+      "rows": 763,
+      "bytes": 285473,
+      "sha256": "5940A2601EA08D8CBB3199984E47DC01ACA4740F4807245C4BDA2597E4E1F44E",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "744",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=752/page=0001.json",
+      "rows": 761,
+      "bytes": 283603,
+      "sha256": "DF713F9EE4EFA96890EE5E67237165690B45350A7186BFE8DBB2E0B34ADCBF6D",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "752",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=779/page=0001.json",
+      "rows": 5000,
+      "bytes": 1843028,
+      "sha256": "E2AB9BB91D56F53D0BD16E3F71F26433788774146FBA2AD8B59A24DEF4D21755",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "779",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=779/page=0002.json",
+      "rows": 446,
+      "bytes": 168124,
+      "sha256": "D98830121DB71B6EE4463BDD1196C17D9772EC6A0F630289A5AE52EF954472AF",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "779",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=78/page=0001.json",
+      "rows": 5000,
+      "bytes": 1861617,
+      "sha256": "5F13DB45B5DBF0E9A0DB50AED415B6C6F0D37BB49F7F7D10D8AB61A10CAA5C0B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "78",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=78/page=0002.json",
+      "rows": 5000,
+      "bytes": 1859939,
+      "sha256": "3B48C43A6687544B475BF5B25BA6E86BF760EDF52F54B63101B343CA13396B37",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "78",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=78/page=0003.json",
+      "rows": 5000,
+      "bytes": 1847342,
+      "sha256": "ED8BDA7502F515DFB527F9590476D35ABA67CD401BC9E9108B39758C343CF59F",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "78",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=78/page=0004.json",
+      "rows": 3921,
+      "bytes": 1463577,
+      "sha256": "EC142BC8F26959FEFD226290B6277B10D0E70B56A2C5029E2519D8A635E47DE6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "78",
+        "page": 4
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=787/page=0001.json",
+      "rows": 316,
+      "bytes": 120380,
+      "sha256": "4F24F84CC9558D77E17E81266624C97D4E74F2BAE5AA103232C3F7432A463398",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "787",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=795/page=0001.json",
+      "rows": 2181,
+      "bytes": 853335,
+      "sha256": "E7FE31F68FC3E62EB872B3608779D3A2CFE16C5FD61B7F46AA8DDD88F3A621D5",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "795",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=809/page=0001.json",
+      "rows": 1119,
+      "bytes": 434760,
+      "sha256": "279FEB1168DCCDF5C20200FDA12627A0C2DC39CCD94D31193385CB13A2F3CF2A",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "809",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=94/page=0001.json",
+      "rows": 5000,
+      "bytes": 1886935,
+      "sha256": "4C23FD4ABD18CE7C97E63FF925F86D859277F129D5717FC71CD53A7A6A803481",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "94",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=94/page=0002.json",
+      "rows": 5000,
+      "bytes": 1854531,
+      "sha256": "0C072971E7A062CA7867B94109677FFFC8FC9B8A48E2A88801EF20908D30D414",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "94",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=94/page=0003.json",
+      "rows": 5000,
+      "bytes": 1867776,
+      "sha256": "047A704281931D812EDF637535457B7FAB197E49F0531C9BD1594E319DAAB364",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "94",
+        "page": 3
+      }
+    },
+    {
+      "path": "partitions/section_results/year=2024/state=RO/office_id=13/round=1/city_id=94/page=0004.json",
+      "rows": 1917,
+      "bytes": 716086,
+      "sha256": "DB3BBA2557E661F7D51203DD8917DF2E0EFA5149E9EEE1D4F425B3D0C741C84B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "city_id": "94",
+        "page": 4
+      }
+    }
+  ]
+}
