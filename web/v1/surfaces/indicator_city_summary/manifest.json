@@ -20,7 +20,7 @@
       "path": "partitions/indicator_city_summary/year=2024/state=RO/page=0001.json",
       "rows": 104,
       "bytes": 49534,
-      "sha256": "B129FE262868E07D0A71EE6AAB2EA76859CAA27C9C195FA9881CC22B09E493F2",
+      "sha256": "AFC8D61F2B20379191A1374D7D7B47EC0FC79801FB7EB229C878CFB8F535F06F",
       "partition": {
         "year": 2024,
         "state": "RO",

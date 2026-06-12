@@ -23,7 +23,7 @@
       "path": "partitions/election_results/year=2024/state=RO/office_id=11/round=1/page=0001.json",
       "rows": 161,
       "bytes": 82644,
-      "sha256": "D5E2CFCB6D6BE9D3584EFF5A98E026D2AFAC9FA449AD696328A1E35611B1C8FB",
+      "sha256": "CDB0410C6D9A9E0454FA58A696C2D69912E009172C61FF39C7988A3B3DB28718",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -36,7 +36,7 @@
       "path": "partitions/election_results/year=2024/state=RO/office_id=11/round=2/page=0001.json",
       "rows": 2,
       "bytes": 1261,
-      "sha256": "C095DEEE257CCF22FF77E3D4E23BCEDF43DF55E1B09DF014295A0E7BE415FF89",
+      "sha256": "25AB6F2294CE68EE998178180B9A86C0EC2168BA7EB3BB887F9244E2D3C1FCF1",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -49,7 +49,7 @@
       "path": "partitions/election_results/year=2024/state=RO/office_id=13/round=1/page=0001.json",
       "rows": 4329,
       "bytes": 2237204,
-      "sha256": "9102DBC2BDA933364B78150288E6483296B5509E957617B5612D82B9EBE6FC24",
+      "sha256": "59FFF6280B77D2017226448A109D13AE7DAD057E517E17BF5EE50483D39495CA",
       "partition": {
         "year": 2024,
         "state": "RO",

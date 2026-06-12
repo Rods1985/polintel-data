@@ -1,6 +1,6 @@
 {
   "schema_version": "web/v1",
-  "generated_at_utc": "2026-06-12T08:25:17.006930+00:00",
+  "generated_at_utc": "2026-06-12T08:33:57.892639+00:00",
   "status": "local_ready_remote_publication_pending",
   "package_scope": {
     "years": [
@@ -39,37 +39,37 @@
       "path": "indexes/years.json",
       "rows": 1,
       "bytes": 120,
-      "sha256": "4DE05BD6C40155F1EE1EB5064B878681A7B970E8D622A940C4577F86D9714483"
+      "sha256": "6C767C401A02DBB9354DDC9D57D6BA08C2D4806CFD317F436FB320B1BC4EE19D"
     },
     "states": {
       "path": "indexes/states.json",
       "rows": 1,
       "bytes": 133,
-      "sha256": "61E07F44975FF9212CC77051D3E35411E4040B50004266E2A9EDB766298A0536"
+      "sha256": "6EE03A7E12F72DEC07A958AA16D008FB397F58B5BE467F8AF14204D381D4E216"
     },
     "cities_by_year_state": {
       "path": "indexes/cities_by_year_state.json",
       "rows": 104,
       "bytes": 7745,
-      "sha256": "4AEDEF8D13E1EA086A9A42981ABB8FB351B882B914869ECBD905D86E117BA463"
+      "sha256": "42EBC2AFBA04A8293243681C4B69037E264458D873BE3C3BCA8E2AF0F3F588FF"
     },
     "offices_by_year_state": {
       "path": "indexes/offices_by_year_state.json",
       "rows": 2,
       "bytes": 234,
-      "sha256": "889C764F29E28A169E4E3ABCE49C6636D12C65936DCFEF69E1DED5ACE77FCE52"
+      "sha256": "A77B2BFB46467FAD703A0D0FBA59E74EFB6F8AF84B88E0FC47FF004264F0EF7C"
     },
     "parties_by_year_state": {
       "path": "indexes/parties_by_year_state.json",
       "rows": 24,
       "bytes": 2490,
-      "sha256": "3D95AB968D8A3EB3BD16599C07D89370B70416C247B94BDBFDFFEEE7F763717A"
+      "sha256": "651F32090A790C02DEBCD47369ED2A2496551B2587EAF091D90157E42BA7171D"
     },
     "candidates_by_year_state": {
       "path": "indexes/candidates_by_year_state.json",
       "rows": 8039,
       "bytes": 1788344,
-      "sha256": "E4DF47C720458EEF4C6B386968A97938EB7E35611536C9849127B6B6D975FF51"
+      "sha256": "0FB1B37BF8284C36145A051C0291D2D4978B2135348AA2516DC39E77A11AA7AB"
     }
   },
   "data_dictionary": {
@@ -87,7 +87,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 33711,
-      "sha256": "CB00B989BF1A6D7F93FA99BC314B1C17800AD4EC9A18CF684DCE16EFA1413081"
+      "sha256": "767A1BF7DEE62FDE5E381B9CDE5D04F92AB8E13EC0550FE8BCA3950855D91E87"
     },
     "indicator_city_summary": {
       "surface": "indicator_city_summary",
@@ -98,7 +98,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 49534,
-      "sha256": "D9C95945376430FD09D5C3B5407E1908CE9CBFFA62A6D9B1849EAABB7CAF4B38"
+      "sha256": "E7125F1F73DBB526BF5C7027B9BB4DD46B1EBC7F8743C80BF8E19DA797BF3970"
     },
     "party_results": {
       "surface": "party_results",
@@ -109,7 +109,7 @@
       "row_count": 680,
       "file_count": 1,
       "bytes": 241601,
-      "sha256": "004A0E94AF74B788E4661BEF18C343F784737DB0DB81825D25EE5CC9C7B9C21E"
+      "sha256": "3514B35699C8796D2B306E7C0067F7C9C05C2CA81EF5C99E583FA7A0749F4571"
     },
     "election_results": {
       "surface": "election_results",
@@ -120,7 +120,7 @@
       "row_count": 4492,
       "file_count": 3,
       "bytes": 2321109,
-      "sha256": "C6F39BFF1448F48F85C3CAAF63A39485A160113C35DBFF3E9923085FAA46D9AC"
+      "sha256": "0FAB348E100237B8A84CDE7969BF9CBF9196DFC07A4C01E3F33FC7D4F188F84C"
     },
     "candidates": {
       "surface": "candidates",
@@ -131,7 +131,7 @@
       "row_count": 22642,
       "file_count": 7,
       "bytes": 11639317,
-      "sha256": "C711A0EE27FB1FBFD24BD9C178B06D06D797B1E1F11E845AE73DEAB2B6D10A44"
+      "sha256": "DBCE488C319FE522792E49DC6D5BAF485D8C98610D354FE877B5FB44D1B71248"
     },
     "finance_candidate_summary": {
       "surface": "finance_candidate_summary",
@@ -142,7 +142,7 @@
       "row_count": 4698,
       "file_count": 1,
       "bytes": 1695728,
-      "sha256": "034280AB0D5916AFEABC57A8E3F5AFBEE6E96A7C85BFF805A06C33685B8477BF"
+      "sha256": "4104F7BD229762F5C754263EB78C7CEF53FE32161FB78F8328C43D58A13AA45C"
     },
     "strategic_insights": {
       "surface": "strategic_insights",
@@ -153,7 +153,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 45220,
-      "sha256": "BD41FBC9C44CD6D1E97A20FA1F48B46D85347A12D21C1158EDA7397279A2151A"
+      "sha256": "D63C29B1957C0AB4F6BE92BCB600861EEDCBC651C5488C3DEA72B164CCE2ECC5"
     },
     "crm_preview": {
       "surface": "crm_preview",
@@ -164,7 +164,7 @@
       "row_count": 1,
       "file_count": 1,
       "bytes": 481,
-      "sha256": "AD1CC487D4105F0679CF7F1FED623F606390C74BC2D93D285969FFEC6020AA7E"
+      "sha256": "3B0C0E03C52159D437C0E5CAAC37D61989B6CF6C3EC3F600CAB64A60F06A926F"
     }
   },
   "indicator_policy": {
@@ -179,6 +179,5 @@
     ],
     "required_cors": "Access-Control-Allow-Origin: *",
     "base_url_example": "https://<dominio-ou-pages>/polintel-data/web/v1"
-  },
-  "manifest_sha256": "B5725CC0A9D68CDEC0049669CEDBDFC7C1F3E27E6D3B25E0879E26249E190EEB"
+  }
 }
