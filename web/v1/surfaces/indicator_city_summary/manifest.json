@@ -1,0 +1,31 @@
+{
+  "schema_version": "web/v1",
+  "surface": "indicator_city_summary",
+  "description": "Resumo por ano, UF e municipio para KPIs territoriais.",
+  "source_type": "consolidado_tse",
+  "source_format": "parquet",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 104,
+  "file_count": 1,
+  "bytes": 49534,
+  "files": [
+    {
+      "path": "partitions/indicator_city_summary/year=2024/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 49534,
+      "sha256": "B129FE262868E07D0A71EE6AAB2EA76859CAA27C9C195FA9881CC22B09E493F2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "page": 1
+      }
+    }
+  ]
+}

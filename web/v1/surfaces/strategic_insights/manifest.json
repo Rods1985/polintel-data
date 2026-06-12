@@ -1,0 +1,31 @@
+{
+  "schema_version": "web/v1",
+  "surface": "strategic_insights",
+  "description": "Insights determinísticos iniciais derivados dos agregados territoriais.",
+  "source_type": "derived_indicator",
+  "source_format": "csv",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 104,
+  "file_count": 1,
+  "bytes": 45220,
+  "files": [
+    {
+      "path": "partitions/strategic_insights/year=2024/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 45220,
+      "sha256": "44C909756F8EA092BF6776B01EC1C1D3CEBE622DA5A091CBABE7C0961C7B66BA",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "page": 1
+      }
+    }
+  ]
+}

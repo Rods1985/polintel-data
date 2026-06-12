@@ -1,0 +1,62 @@
+{
+  "schema_version": "web/v1",
+  "surface": "election_results",
+  "description": "Resultado por ano, turno, UF, municipio, cargo e candidato.",
+  "source_type": "consolidado_tse",
+  "source_format": "parquet",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [
+      "office_id",
+      "round"
+    ],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 4492,
+  "file_count": 3,
+  "bytes": 2321109,
+  "files": [
+    {
+      "path": "partitions/election_results/year=2024/state=RO/office_id=11/round=1/page=0001.json",
+      "rows": 161,
+      "bytes": 82644,
+      "sha256": "D5E2CFCB6D6BE9D3584EFF5A98E026D2AFAC9FA449AD696328A1E35611B1C8FB",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 1,
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/election_results/year=2024/state=RO/office_id=11/round=2/page=0001.json",
+      "rows": 2,
+      "bytes": 1261,
+      "sha256": "C095DEEE257CCF22FF77E3D4E23BCEDF43DF55E1B09DF014295A0E7BE415FF89",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "round": 2,
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/election_results/year=2024/state=RO/office_id=13/round=1/page=0001.json",
+      "rows": 4329,
+      "bytes": 2237204,
+      "sha256": "9102DBC2BDA933364B78150288E6483296B5509E957617B5612D82B9EBE6FC24",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "round": 1,
+        "page": 1
+      }
+    }
+  ]
+}

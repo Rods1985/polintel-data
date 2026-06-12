@@ -1,0 +1,740 @@
+[
+  {
+    "table": "election_results",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "year",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "round",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "city_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "city_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "office_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "office",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "candidate_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "candidate_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "candidate_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "ballot_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "party_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "party",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "party_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "valid_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "vote_share",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "legend_votes",
+    "type": "BIGINT",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "turnout",
+    "type": "BIGINT",
+    "description": ""
+  },
+  {
+    "table": "election_results",
+    "column": "abstention",
+    "type": "BIGINT",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "year",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "round",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "city_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "city_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "office_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "office",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "party_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "party",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "party_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "nominal_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "legend_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "valid_nominal_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "party_results",
+    "column": "valid_legend_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "year",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "city_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "city_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "ibge_code",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "tse_code",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "latitude",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "longitude",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "region_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "voters",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "eligible_voters",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "turnout",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "abstention",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "territories",
+    "column": "votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "year",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "round",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "electoral_unit",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "office_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "office",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "candidate_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "candidate_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "candidate_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "ballot_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "social_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "party_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "party",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "party_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "candidacy_status",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "election_result_status",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "status",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "profile_summary",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "candidates",
+    "column": "campaign_spending_limit",
+    "type": "DECIMAL(18,2)",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "year",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "candidate_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "candidate_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "candidate_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "party_number",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "party",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "party_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "revenue_value",
+    "type": "DECIMAL(38,2)",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "expense_value",
+    "type": "DECIMAL(38,2)",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "financial_value",
+    "type": "DECIMAL(38,2)",
+    "description": ""
+  },
+  {
+    "table": "finance_candidate_summary",
+    "column": "financial_events",
+    "type": "BIGINT",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "year",
+    "type": "INTEGER",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "city_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "city_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "voters",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "eligible_voters",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "turnout",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "abstention",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "turnout_rate",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "abstention_rate",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "leading_candidate_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "leading_candidate_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "leading_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "runner_up_votes",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "leading_vote_share",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "indicator_city_summary",
+    "column": "leading_margin",
+    "type": "DOUBLE",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "type",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "severity",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "territory_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "candidate_id",
+    "type": "BIGINT",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "title",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "description",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "recommended_action",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "year",
+    "type": "BIGINT",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "state",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "city_id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "strategic_insights",
+    "column": "city_name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "id",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "name",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "type",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "territory",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "influence_level",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "tags",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "last_contact",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "next_action",
+    "type": "VARCHAR",
+    "description": ""
+  },
+  {
+    "table": "crm_preview",
+    "column": "governance_note",
+    "type": "VARCHAR",
+    "description": ""
+  }
+]

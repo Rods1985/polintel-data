@@ -1,0 +1,26 @@
+{
+  "schema_version": "web/v1",
+  "surface": "crm_preview",
+  "description": "Placeholder governado para modulo CRM; nao derivado dos dados TSE.",
+  "source_type": "governance_placeholder",
+  "source_format": "csv",
+  "partition_strategy": {
+    "base": [],
+    "extra": [],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 1,
+  "file_count": 1,
+  "bytes": 481,
+  "files": [
+    {
+      "path": "partitions/crm_preview/page=0001.json",
+      "rows": 1,
+      "bytes": 481,
+      "sha256": "76A214687838750CDBC786E968A5A2636EB4508A3A05436DE966403740B047E5",
+      "partition": {
+        "page": 1
+      }
+    }
+  ]
+}

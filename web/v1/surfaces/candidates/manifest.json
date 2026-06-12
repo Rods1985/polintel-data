@@ -1,0 +1,106 @@
+{
+  "schema_version": "web/v1",
+  "surface": "candidates",
+  "description": "Cadastro de candidaturas por ano, turno, cargo e unidade eleitoral.",
+  "source_type": "consolidado_tse",
+  "source_format": "parquet",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [
+      "office_id"
+    ],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 22642,
+  "file_count": 7,
+  "bytes": 11639317,
+  "files": [
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=11/page=0001.json",
+      "rows": 342,
+      "bytes": 202280,
+      "sha256": "79DBA450142CE4C854479A2834D5BBC9C75EDA12C3E7B02C696B5243078C193B",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "11",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=12/page=0001.json",
+      "rows": 350,
+      "bytes": 210994,
+      "sha256": "D4D6046DF9909C58872D92B2B1854EFEEC7C2355263FE58AC1ADBE5E263F28B4",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "12",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=13/page=0001.json",
+      "rows": 5000,
+      "bytes": 2972345,
+      "sha256": "F1A0DB127EF0458AC38D39294DC31205DB349205EFD6434FEC7AE368F2CEDC7C",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=13/page=0002.json",
+      "rows": 4064,
+      "bytes": 2454311,
+      "sha256": "266E5479C5285D04D562D7E226CF92C6C4ADB770E4170B8B3F03FAC079B626A7",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": "13",
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=na/page=0001.json",
+      "rows": 5000,
+      "bytes": 2250229,
+      "sha256": "D147F5767CFBAC87E478119E9BD3FB4602CBE112255AED12E245AA650ACB7CDD",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "page": 1
+      }
+    },
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=na/page=0002.json",
+      "rows": 5000,
+      "bytes": 2250229,
+      "sha256": "53FBC9398F50E952D81A5CE9955CD984921C2475E6AB822F718D62C3142763B6",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "page": 2
+      }
+    },
+    {
+      "path": "partitions/candidates/year=2024/state=RO/office_id=na/page=0003.json",
+      "rows": 2886,
+      "bytes": 1298929,
+      "sha256": "F38E5BB73D678ACF6DDC06157F550B67E5944D8418061447845CD47F0CA40DA9",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "office_id": null,
+        "page": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "web/v1",
+  "generated_at_utc": "2026-06-12T08:25:17.006930+00:00",
+  "status": "local_ready_remote_publication_pending",
+  "package_scope": {
+    "years": [
+      "2024"
+    ],
+    "states": [
+      "RO"
+    ],
+    "note": "O gerador suporta novos anos/UFs; esta execucao materializa o recorte informado."
+  },
+  "config": {
+    "primary_key": "POLINTEL_DATA_BASE_URL",
+    "manifest_path": "manifest.json",
+    "fallback_key": "POLINTEL_REMOTE_BUNDLE_URL",
+    "fallback_policy": "Usar apenas como fallback/seed explicitamente sinalizado."
+  },
+  "publication_root": "C:\\PolIntel\\base_consolidada\\v1\\publication_lovable",
+  "web_root": "C:\\PolIntel\\base_consolidada\\v1\\publication_lovable\\web\\v1",
+  "source": {
+    "kind": "publication_lovable",
+    "tables_dir": "C:\\PolIntel\\base_consolidada\\v1\\publication_lovable\\tables",
+    "source_manifest": "C:\\PolIntel\\base_consolidada\\v1\\publication_lovable\\publication_manifest.json"
+  },
+  "counts": {
+    "surfaces": 8,
+    "partition_files": 16,
+    "rows": 32825,
+    "bytes": 16026701
+  },
+  "limits": {
+    "max_rows_per_file": 5000,
+    "recommended_max_bytes_per_file": 5242880
+  },
+  "indexes": {
+    "years": {
+      "path": "indexes/years.json",
+      "rows": 1,
+      "bytes": 120,
+      "sha256": "4DE05BD6C40155F1EE1EB5064B878681A7B970E8D622A940C4577F86D9714483"
+    },
+    "states": {
+      "path": "indexes/states.json",
+      "rows": 1,
+      "bytes": 133,
+      "sha256": "61E07F44975FF9212CC77051D3E35411E4040B50004266E2A9EDB766298A0536"
+    },
+    "cities_by_year_state": {
+      "path": "indexes/cities_by_year_state.json",
+      "rows": 104,
+      "bytes": 7745,
+      "sha256": "4AEDEF8D13E1EA086A9A42981ABB8FB351B882B914869ECBD905D86E117BA463"
+    },
+    "offices_by_year_state": {
+      "path": "indexes/offices_by_year_state.json",
+      "rows": 2,
+      "bytes": 234,
+      "sha256": "889C764F29E28A169E4E3ABCE49C6636D12C65936DCFEF69E1DED5ACE77FCE52"
+    },
+    "parties_by_year_state": {
+      "path": "indexes/parties_by_year_state.json",
+      "rows": 24,
+      "bytes": 2490,
+      "sha256": "3D95AB968D8A3EB3BD16599C07D89370B70416C247B94BDBFDFFEEE7F763717A"
+    },
+    "candidates_by_year_state": {
+      "path": "indexes/candidates_by_year_state.json",
+      "rows": 8039,
+      "bytes": 1788344,
+      "sha256": "E4DF47C720458EEF4C6B386968A97938EB7E35611536C9849127B6B6D975FF51"
+    }
+  },
+  "data_dictionary": {
+    "path": "data_dictionary.json",
+    "bytes": 14775,
+    "sha256": "BA3DFC8B14A2A6F5D46907C33DF4AB31AA635839FCC7F37B9C9D4C6F1677EF61"
+  },
+  "surfaces": {
+    "territories": {
+      "surface": "territories",
+      "description": "Territorios por ano, UF e municipio com votos, eleitorado e comparecimento quando disponiveis.",
+      "source_type": "consolidado_tse",
+      "source_format": "parquet",
+      "manifest_path": "surfaces/territories/manifest.json",
+      "row_count": 104,
+      "file_count": 1,
+      "bytes": 33711,
+      "sha256": "CB00B989BF1A6D7F93FA99BC314B1C17800AD4EC9A18CF684DCE16EFA1413081"
+    },
+    "indicator_city_summary": {
+      "surface": "indicator_city_summary",
+      "description": "Resumo por ano, UF e municipio para KPIs territoriais.",
+      "source_type": "consolidado_tse",
+      "source_format": "parquet",
+      "manifest_path": "surfaces/indicator_city_summary/manifest.json",
+      "row_count": 104,
+      "file_count": 1,
+      "bytes": 49534,
+      "sha256": "D9C95945376430FD09D5C3B5407E1908CE9CBFFA62A6D9B1849EAABB7CAF4B38"
+    },
+    "party_results": {
+      "surface": "party_results",
+      "description": "Resultado por ano, turno, UF, municipio, cargo e partido.",
+      "source_type": "consolidado_tse",
+      "source_format": "parquet",
+      "manifest_path": "surfaces/party_results/manifest.json",
+      "row_count": 680,
+      "file_count": 1,
+      "bytes": 241601,
+      "sha256": "004A0E94AF74B788E4661BEF18C343F784737DB0DB81825D25EE5CC9C7B9C21E"
+    },
+    "election_results": {
+      "surface": "election_results",
+      "description": "Resultado por ano, turno, UF, municipio, cargo e candidato.",
+      "source_type": "consolidado_tse",
+      "source_format": "parquet",
+      "manifest_path": "surfaces/election_results/manifest.json",
+      "row_count": 4492,
+      "file_count": 3,
+      "bytes": 2321109,
+      "sha256": "C6F39BFF1448F48F85C3CAAF63A39485A160113C35DBFF3E9923085FAA46D9AC"
+    },
+    "candidates": {
+      "surface": "candidates",
+      "description": "Cadastro de candidaturas por ano, turno, cargo e unidade eleitoral.",
+      "source_type": "consolidado_tse",
+      "source_format": "parquet",
+      "manifest_path": "surfaces/candidates/manifest.json",
+      "row_count": 22642,
+      "file_count": 7,
+      "bytes": 11639317,
+      "sha256": "C711A0EE27FB1FBFD24BD9C178B06D06D797B1E1F11E845AE73DEAB2B6D10A44"
+    },
+    "finance_candidate_summary": {
+      "surface": "finance_candidate_summary",
+      "description": "Resumo financeiro por ano, candidato e partido.",
+      "source_type": "consolidado_tse",
+      "source_format": "parquet",
+      "manifest_path": "surfaces/finance_candidate_summary/manifest.json",
+      "row_count": 4698,
+      "file_count": 1,
+      "bytes": 1695728,
+      "sha256": "034280AB0D5916AFEABC57A8E3F5AFBEE6E96A7C85BFF805A06C33685B8477BF"
+    },
+    "strategic_insights": {
+      "surface": "strategic_insights",
+      "description": "Insights determinísticos iniciais derivados dos agregados territoriais.",
+      "source_type": "derived_indicator",
+      "source_format": "csv",
+      "manifest_path": "surfaces/strategic_insights/manifest.json",
+      "row_count": 104,
+      "file_count": 1,
+      "bytes": 45220,
+      "sha256": "BD41FBC9C44CD6D1E97A20FA1F48B46D85347A12D21C1158EDA7397279A2151A"
+    },
+    "crm_preview": {
+      "surface": "crm_preview",
+      "description": "Placeholder governado para modulo CRM; nao derivado dos dados TSE.",
+      "source_type": "governance_placeholder",
+      "source_format": "csv",
+      "manifest_path": "surfaces/crm_preview/manifest.json",
+      "row_count": 1,
+      "file_count": 1,
+      "bytes": 481,
+      "sha256": "AD1CC487D4105F0679CF7F1FED623F606390C74BC2D93D285969FFEC6020AA7E"
+    }
+  },
+  "indicator_policy": {
+    "seed_static_data": "avoid",
+    "seed_fallback_must_be_flagged": true,
+    "primary_source_label": "CONSOLIDADO TSE - web/v1 particionado"
+  },
+  "publish_targets": {
+    "preferred": [
+      "cloudflare_pages",
+      "github_pages"
+    ],
+    "required_cors": "Access-Control-Allow-Origin: *",
+    "base_url_example": "https://<dominio-ou-pages>/polintel-data/web/v1"
+  },
+  "manifest_sha256": "B5725CC0A9D68CDEC0049669CEDBDFC7C1F3E27E6D3B25E0879E26249E190EEB"
+}

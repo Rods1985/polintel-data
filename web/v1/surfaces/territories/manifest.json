@@ -1,0 +1,31 @@
+{
+  "schema_version": "web/v1",
+  "surface": "territories",
+  "description": "Territorios por ano, UF e municipio com votos, eleitorado e comparecimento quando disponiveis.",
+  "source_type": "consolidado_tse",
+  "source_format": "parquet",
+  "partition_strategy": {
+    "base": [
+      "year",
+      "state"
+    ],
+    "extra": [],
+    "max_rows_per_file": 5000
+  },
+  "row_count": 104,
+  "file_count": 1,
+  "bytes": 33711,
+  "files": [
+    {
+      "path": "partitions/territories/year=2024/state=RO/page=0001.json",
+      "rows": 104,
+      "bytes": 33711,
+      "sha256": "DDFBC48A9D1CB751DEF3354FC104B31CAD562C823847E1B97F1D69CB7132A7D2",
+      "partition": {
+        "year": 2024,
+        "state": "RO",
+        "page": 1
+      }
+    }
+  ]
+}
