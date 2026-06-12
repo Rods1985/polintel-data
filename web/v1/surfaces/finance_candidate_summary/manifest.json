@@ -20,7 +20,7 @@
       "path": "partitions/finance_candidate_summary/year=2024/state=RO/page=0001.json",
       "rows": 4698,
       "bytes": 1695727,
-      "sha256": "CFB805A650DC15FEC17FDBF89D4267B55E9E56A710D4C6141C735756554B2539",
+      "sha256": "BBAEA19258A56E99A99975F691B76531A32407BA348C5342FF478D7E04D3AB71",
       "partition": {
         "year": 2024,
         "state": "RO",

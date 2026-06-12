@@ -20,7 +20,7 @@
       "path": "partitions/strategic_insights/year=2024/state=RO/page=0001.json",
       "rows": 104,
       "bytes": 45219,
-      "sha256": "62076D580582A5B144F16C2CBC2C3DB4D19439AF9C4A03E4ECFA8263CEEF9D2B",
+      "sha256": "4BD917468BE7D4C70694E9107C8242646085F5CBA07030ECDDBD734EB6987124",
       "partition": {
         "year": 2024,
         "state": "RO",

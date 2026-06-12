@@ -1,6 +1,6 @@
 {
   "schema_version": "web/v1",
-  "generated_at_utc": "2026-06-12T08:38:33.904732+00:00",
+  "generated_at_utc": "2026-06-12T08:39:40.744060+00:00",
   "status": "local_ready_remote_publication_pending",
   "package_scope": {
     "years": [
@@ -39,43 +39,43 @@
       "path": "indexes/years.json",
       "rows": 1,
       "bytes": 119,
-      "sha256": "A71FDFF130A454ADFD5B4BB2751998A3784A47DE068C7D989A10BBD5B8BA3840"
+      "sha256": "C2A25255616757B26AE8F49E3B83A8E99A7A9220CA704B8F53127A9FA62D0B5F"
     },
     "states": {
       "path": "indexes/states.json",
       "rows": 1,
       "bytes": 132,
-      "sha256": "19AF956E3B3AC9BD81D3ECFE3A513BC9590BA34F5D92D245CEB0FC8EA6C493B3"
+      "sha256": "46DCF9D132D5358B4D98F37AA33F0DB569508DF248B51C301813749F40229658"
     },
     "cities_by_year_state": {
       "path": "indexes/cities_by_year_state.json",
       "rows": 104,
       "bytes": 7744,
-      "sha256": "81D406FF9C928BB462889C3E2DFC026842851D17709FBC351AD34BCC3F082D3D"
+      "sha256": "D7AB38EA591FECD805CC7F99B2A258CDAFF23BA01CFA2506E03776288519024A"
     },
     "offices_by_year_state": {
       "path": "indexes/offices_by_year_state.json",
       "rows": 2,
       "bytes": 233,
-      "sha256": "B89A7F6853FA251D2CCF3893E6E743380CB8551CBDF956DE057DB4D433AD0F44"
+      "sha256": "9F04EEC359768920A6DA1DE1F71BC3C5980FAC054AC31948BC7EFD2863A00548"
     },
     "parties_by_year_state": {
       "path": "indexes/parties_by_year_state.json",
       "rows": 24,
       "bytes": 2489,
-      "sha256": "6A92231DBE8A66674FE8DD896B5788466EF0EB2FD5C94A38AA6D8D96CACA8197"
+      "sha256": "1EA4DB572C0D0A241F0E6EFC340FB67700DE6555FAE9B8BE5D4466C883DC9008"
     },
     "candidates_by_year_state": {
       "path": "indexes/candidates_by_year_state.json",
       "rows": 8039,
       "bytes": 1788343,
-      "sha256": "7FC00DB38D88770A834930A01D107B1900EEE32BE3B1FAEC9340C0714E1A7BB5"
+      "sha256": "288E8F71D6BFADB795C884D31926FBA9AE899914DC7722EA1D0C987128645293"
     }
   },
   "data_dictionary": {
     "path": "data_dictionary.json",
-    "bytes": 14775,
-    "sha256": "BA3DFC8B14A2A6F5D46907C33DF4AB31AA635839FCC7F37B9C9D4C6F1677EF61"
+    "bytes": 14035,
+    "sha256": "20C88DC92AA28DAAA20BFCDFF6810B588BA5348E2938DDE16F495A221FE10605"
   },
   "surfaces": {
     "territories": {
@@ -87,7 +87,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 33710,
-      "sha256": "371844D5602EA8828E84CF8F572733AB537973327808B7370290981910A61A84"
+      "sha256": "F18CE2AD698D487A9A3D93835036B58CA43BFE90FEEB6C08A8719D9F4050B2A5"
     },
     "indicator_city_summary": {
       "surface": "indicator_city_summary",
@@ -98,7 +98,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 49533,
-      "sha256": "6F8641075E28C940584B0BE2840781EABEFFC7588A6B767DEFC85E3E65C7D1B9"
+      "sha256": "05FD53EEA812A641CDC75A69F3E79E2C59C1AC97DE8A54D87F90CC87F64741BD"
     },
     "party_results": {
       "surface": "party_results",
@@ -109,7 +109,7 @@
       "row_count": 680,
       "file_count": 1,
       "bytes": 241600,
-      "sha256": "554D6BB8F33DB86F781E963592F032EBC3EEF6FA2521DC6BF557860DE4B40FE6"
+      "sha256": "320C64E48CAEBCF61314BE84505ADB1ED10A332FC2565BB8AF5A7A766696BDB9"
     },
     "election_results": {
       "surface": "election_results",
@@ -120,7 +120,7 @@
       "row_count": 4492,
       "file_count": 3,
       "bytes": 2321106,
-      "sha256": "3E207DD3117729181EC3903AC61C2128611B40E889A2EDDBFC7FC42741BB8255"
+      "sha256": "E4F7F702C9D903F84CF2D7B2EB96AB6AA4988924DA16C059615026DB1103D395"
     },
     "candidates": {
       "surface": "candidates",
@@ -131,7 +131,7 @@
       "row_count": 22642,
       "file_count": 7,
       "bytes": 11639310,
-      "sha256": "41D7A4C86186A54C0DFC8B0A00D7C3796E4D0774BBAADEAF9499B359B1C42DAF"
+      "sha256": "974F73C5C04036284C8A3E8A53DF47B7AD6D745F8FC243336CC9F31A31A26A76"
     },
     "finance_candidate_summary": {
       "surface": "finance_candidate_summary",
@@ -142,7 +142,7 @@
       "row_count": 4698,
       "file_count": 1,
       "bytes": 1695727,
-      "sha256": "9CAC612ED999885FFADB8E0C90F5371D4620E61CAA904B3E98C3479D81416BBB"
+      "sha256": "1C27216686784232A406A58400AD4CE1C0AE48319E58F3D6E86194839939523F"
     },
     "strategic_insights": {
       "surface": "strategic_insights",
@@ -153,7 +153,7 @@
       "row_count": 104,
       "file_count": 1,
       "bytes": 45219,
-      "sha256": "B02EA2B1B57A68E30B677B349ED92D5BEBCDF290416DE0BCC462770E4A69A61C"
+      "sha256": "892CBB6DEE5A809E22DE8C68F719A93D1B9526CAF20465B321E8580CCDE4F9A3"
     },
     "crm_preview": {
       "surface": "crm_preview",
@@ -164,7 +164,7 @@
       "row_count": 1,
       "file_count": 1,
       "bytes": 480,
-      "sha256": "A65236573CB50BA458DF4959BF2F608FDB5FDEAFE224BB1690DBC2D50F6F86A0"
+      "sha256": "1F6A36EC837B63121792FB115F9118350EDD27C8680A356D41BD15850846FF3B"
     }
   },
   "indicator_policy": {
