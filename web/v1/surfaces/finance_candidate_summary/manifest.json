@@ -14,13 +14,13 @@
   },
   "row_count": 4698,
   "file_count": 1,
-  "bytes": 1695728,
+  "bytes": 1695727,
   "files": [
     {
       "path": "partitions/finance_candidate_summary/year=2024/state=RO/page=0001.json",
       "rows": 4698,
-      "bytes": 1695728,
-      "sha256": "7976BF293E9C5B1C6E2A2534CB7069B9AF476EA0F56A1C9B952B59E6C7F87D38",
+      "bytes": 1695727,
+      "sha256": "CFB805A650DC15FEC17FDBF89D4267B55E9E56A710D4C6141C735756554B2539",
       "partition": {
         "year": 2024,
         "state": "RO",

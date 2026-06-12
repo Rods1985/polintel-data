@@ -1,6 +1,6 @@
 {
   "schema_version": "web/v1",
-  "generated_at_utc": "2026-06-12T08:33:57.892639+00:00",
+  "generated_at_utc": "2026-06-12T08:38:33.904732+00:00",
   "status": "local_ready_remote_publication_pending",
   "package_scope": {
     "years": [
@@ -28,7 +28,7 @@
     "surfaces": 8,
     "partition_files": 16,
     "rows": 32825,
-    "bytes": 16026701
+    "bytes": 16026685
   },
   "limits": {
     "max_rows_per_file": 5000,
@@ -38,38 +38,38 @@
     "years": {
       "path": "indexes/years.json",
       "rows": 1,
-      "bytes": 120,
-      "sha256": "6C767C401A02DBB9354DDC9D57D6BA08C2D4806CFD317F436FB320B1BC4EE19D"
+      "bytes": 119,
+      "sha256": "A71FDFF130A454ADFD5B4BB2751998A3784A47DE068C7D989A10BBD5B8BA3840"
     },
     "states": {
       "path": "indexes/states.json",
       "rows": 1,
-      "bytes": 133,
-      "sha256": "6EE03A7E12F72DEC07A958AA16D008FB397F58B5BE467F8AF14204D381D4E216"
+      "bytes": 132,
+      "sha256": "19AF956E3B3AC9BD81D3ECFE3A513BC9590BA34F5D92D245CEB0FC8EA6C493B3"
     },
     "cities_by_year_state": {
       "path": "indexes/cities_by_year_state.json",
       "rows": 104,
-      "bytes": 7745,
-      "sha256": "42EBC2AFBA04A8293243681C4B69037E264458D873BE3C3BCA8E2AF0F3F588FF"
+      "bytes": 7744,
+      "sha256": "81D406FF9C928BB462889C3E2DFC026842851D17709FBC351AD34BCC3F082D3D"
     },
     "offices_by_year_state": {
       "path": "indexes/offices_by_year_state.json",
       "rows": 2,
-      "bytes": 234,
-      "sha256": "A77B2BFB46467FAD703A0D0FBA59E74EFB6F8AF84B88E0FC47FF004264F0EF7C"
+      "bytes": 233,
+      "sha256": "B89A7F6853FA251D2CCF3893E6E743380CB8551CBDF956DE057DB4D433AD0F44"
     },
     "parties_by_year_state": {
       "path": "indexes/parties_by_year_state.json",
       "rows": 24,
-      "bytes": 2490,
-      "sha256": "651F32090A790C02DEBCD47369ED2A2496551B2587EAF091D90157E42BA7171D"
+      "bytes": 2489,
+      "sha256": "6A92231DBE8A66674FE8DD896B5788466EF0EB2FD5C94A38AA6D8D96CACA8197"
     },
     "candidates_by_year_state": {
       "path": "indexes/candidates_by_year_state.json",
       "rows": 8039,
-      "bytes": 1788344,
-      "sha256": "0FB1B37BF8284C36145A051C0291D2D4978B2135348AA2516DC39E77A11AA7AB"
+      "bytes": 1788343,
+      "sha256": "7FC00DB38D88770A834930A01D107B1900EEE32BE3B1FAEC9340C0714E1A7BB5"
     }
   },
   "data_dictionary": {
@@ -86,8 +86,8 @@
       "manifest_path": "surfaces/territories/manifest.json",
       "row_count": 104,
       "file_count": 1,
-      "bytes": 33711,
-      "sha256": "767A1BF7DEE62FDE5E381B9CDE5D04F92AB8E13EC0550FE8BCA3950855D91E87"
+      "bytes": 33710,
+      "sha256": "371844D5602EA8828E84CF8F572733AB537973327808B7370290981910A61A84"
     },
     "indicator_city_summary": {
       "surface": "indicator_city_summary",
@@ -97,8 +97,8 @@
       "manifest_path": "surfaces/indicator_city_summary/manifest.json",
       "row_count": 104,
       "file_count": 1,
-      "bytes": 49534,
-      "sha256": "E7125F1F73DBB526BF5C7027B9BB4DD46B1EBC7F8743C80BF8E19DA797BF3970"
+      "bytes": 49533,
+      "sha256": "6F8641075E28C940584B0BE2840781EABEFFC7588A6B767DEFC85E3E65C7D1B9"
     },
     "party_results": {
       "surface": "party_results",
@@ -108,8 +108,8 @@
       "manifest_path": "surfaces/party_results/manifest.json",
       "row_count": 680,
       "file_count": 1,
-      "bytes": 241601,
-      "sha256": "3514B35699C8796D2B306E7C0067F7C9C05C2CA81EF5C99E583FA7A0749F4571"
+      "bytes": 241600,
+      "sha256": "554D6BB8F33DB86F781E963592F032EBC3EEF6FA2521DC6BF557860DE4B40FE6"
     },
     "election_results": {
       "surface": "election_results",
@@ -119,8 +119,8 @@
       "manifest_path": "surfaces/election_results/manifest.json",
       "row_count": 4492,
       "file_count": 3,
-      "bytes": 2321109,
-      "sha256": "0FAB348E100237B8A84CDE7969BF9CBF9196DFC07A4C01E3F33FC7D4F188F84C"
+      "bytes": 2321106,
+      "sha256": "3E207DD3117729181EC3903AC61C2128611B40E889A2EDDBFC7FC42741BB8255"
     },
     "candidates": {
       "surface": "candidates",
@@ -130,8 +130,8 @@
       "manifest_path": "surfaces/candidates/manifest.json",
       "row_count": 22642,
       "file_count": 7,
-      "bytes": 11639317,
-      "sha256": "DBCE488C319FE522792E49DC6D5BAF485D8C98610D354FE877B5FB44D1B71248"
+      "bytes": 11639310,
+      "sha256": "41D7A4C86186A54C0DFC8B0A00D7C3796E4D0774BBAADEAF9499B359B1C42DAF"
     },
     "finance_candidate_summary": {
       "surface": "finance_candidate_summary",
@@ -141,8 +141,8 @@
       "manifest_path": "surfaces/finance_candidate_summary/manifest.json",
       "row_count": 4698,
       "file_count": 1,
-      "bytes": 1695728,
-      "sha256": "4104F7BD229762F5C754263EB78C7CEF53FE32161FB78F8328C43D58A13AA45C"
+      "bytes": 1695727,
+      "sha256": "9CAC612ED999885FFADB8E0C90F5371D4620E61CAA904B3E98C3479D81416BBB"
     },
     "strategic_insights": {
       "surface": "strategic_insights",
@@ -152,8 +152,8 @@
       "manifest_path": "surfaces/strategic_insights/manifest.json",
       "row_count": 104,
       "file_count": 1,
-      "bytes": 45220,
-      "sha256": "D63C29B1957C0AB4F6BE92BCB600861EEDCBC651C5488C3DEA72B164CCE2ECC5"
+      "bytes": 45219,
+      "sha256": "B02EA2B1B57A68E30B677B349ED92D5BEBCDF290416DE0BCC462770E4A69A61C"
     },
     "crm_preview": {
       "surface": "crm_preview",
@@ -163,8 +163,8 @@
       "manifest_path": "surfaces/crm_preview/manifest.json",
       "row_count": 1,
       "file_count": 1,
-      "bytes": 481,
-      "sha256": "3B0C0E03C52159D437C0E5CAAC37D61989B6CF6C3EC3F600CAB64A60F06A926F"
+      "bytes": 480,
+      "sha256": "A65236573CB50BA458DF4959BF2F608FDB5FDEAFE224BB1690DBC2D50F6F86A0"
     }
   },
   "indicator_policy": {

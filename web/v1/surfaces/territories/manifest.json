@@ -14,13 +14,13 @@
   },
   "row_count": 104,
   "file_count": 1,
-  "bytes": 33711,
+  "bytes": 33710,
   "files": [
     {
       "path": "partitions/territories/year=2024/state=RO/page=0001.json",
       "rows": 104,
-      "bytes": 33711,
-      "sha256": "63F36958C0C30E556DE9BB8E50131B031601E3996EFB74F789D342D794EEEA45",
+      "bytes": 33710,
+      "sha256": "2DE1E320579A7A4C098B8AE5DF4D2D7D109DEF70660C1CC957C41B2AA6C12F2E",
       "partition": {
         "year": 2024,
         "state": "RO",

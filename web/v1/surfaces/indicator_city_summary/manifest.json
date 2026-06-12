@@ -14,13 +14,13 @@
   },
   "row_count": 104,
   "file_count": 1,
-  "bytes": 49534,
+  "bytes": 49533,
   "files": [
     {
       "path": "partitions/indicator_city_summary/year=2024/state=RO/page=0001.json",
       "rows": 104,
-      "bytes": 49534,
-      "sha256": "AFC8D61F2B20379191A1374D7D7B47EC0FC79801FB7EB229C878CFB8F535F06F",
+      "bytes": 49533,
+      "sha256": "DC44970B95F38C2237B6E802432062C3386B6FDF26B96B787F212D293A7F9A74",
       "partition": {
         "year": 2024,
         "state": "RO",

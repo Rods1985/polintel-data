@@ -17,13 +17,13 @@
   },
   "row_count": 4492,
   "file_count": 3,
-  "bytes": 2321109,
+  "bytes": 2321106,
   "files": [
     {
       "path": "partitions/election_results/year=2024/state=RO/office_id=11/round=1/page=0001.json",
       "rows": 161,
-      "bytes": 82644,
-      "sha256": "CDB0410C6D9A9E0454FA58A696C2D69912E009172C61FF39C7988A3B3DB28718",
+      "bytes": 82643,
+      "sha256": "E42370616C248BB6B5AEC72977506670F7249088DF9BB3164482C63FEF49256F",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -35,8 +35,8 @@
     {
       "path": "partitions/election_results/year=2024/state=RO/office_id=11/round=2/page=0001.json",
       "rows": 2,
-      "bytes": 1261,
-      "sha256": "25AB6F2294CE68EE998178180B9A86C0EC2168BA7EB3BB887F9244E2D3C1FCF1",
+      "bytes": 1260,
+      "sha256": "F17F64C8D2307441BE0065998DE6F81329DF26BDCB31459E3EDBD9737542BADC",
       "partition": {
         "year": 2024,
         "state": "RO",
@@ -48,8 +48,8 @@
     {
       "path": "partitions/election_results/year=2024/state=RO/office_id=13/round=1/page=0001.json",
       "rows": 4329,
-      "bytes": 2237204,
-      "sha256": "59FFF6280B77D2017226448A109D13AE7DAD057E517E17BF5EE50483D39495CA",
+      "bytes": 2237203,
+      "sha256": "37AEFB88B1A78D890EB872236324FC0DC79A3EB22F4EF0A208C8674BA3FFDEC7",
       "partition": {
         "year": 2024,
         "state": "RO",

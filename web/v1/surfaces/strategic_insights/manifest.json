@@ -14,13 +14,13 @@
   },
   "row_count": 104,
   "file_count": 1,
-  "bytes": 45220,
+  "bytes": 45219,
   "files": [
     {
       "path": "partitions/strategic_insights/year=2024/state=RO/page=0001.json",
       "rows": 104,
-      "bytes": 45220,
-      "sha256": "D3AD3C4D1643EAA7245D47EF5CBAC0E19DF87E1A2D220473F3150C29236707F0",
+      "bytes": 45219,
+      "sha256": "62076D580582A5B144F16C2CBC2C3DB4D19439AF9C4A03E4ECFA8263CEEF9D2B",
       "partition": {
         "year": 2024,
         "state": "RO",
