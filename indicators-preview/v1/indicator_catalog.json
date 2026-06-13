@@ -1,0 +1,3240 @@
+{
+  "schema_version": "indicator_catalog/v1",
+  "generated_at_utc": "2026-06-13T08:28:19.129632+00:00",
+  "status": "ready",
+  "source_manifest": "C:\\PolIntel\\base_consolidada\\v1\\indicators_publication\\v1\\indicator_manifest.json",
+  "counts": {
+    "entries": 146,
+    "indicators": 89,
+    "dimensions": 56,
+    "quality_flags": 1,
+    "surfaces": 7
+  },
+  "expansion_contract": {
+    "same_grain_rule": "Novo indicador com grao identico deve ser adicionado como campo na superficie existente, mantendo indicator_id estavel.",
+    "new_grain_rule": "Novo indicador com grao diferente deve criar nova superficie e registrar chaves, eixos, formula e politica de nulos.",
+    "relationship_rule": "Relacionamentos devem usar chaves canonicas como year, state, city_id, office_id, round, candidate_id, party e party_number.",
+    "versioning_rule": "Mudanca compativel incrementa catalog_revision; quebra de contrato exige nova versao de schema.",
+    "frontend_rule": "Lovable deve descobrir indicadores pelo catalogo e carregar somente surfaces/particoes exigidas pela tela corrente."
+  },
+  "entries": [
+    {
+      "indicator_id": "indicator_city_year.id",
+      "surface": "indicator_city_year",
+      "field": "id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.year",
+      "surface": "indicator_city_year",
+      "field": "year",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.state",
+      "surface": "indicator_city_year",
+      "field": "state",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.city_id",
+      "surface": "indicator_city_year",
+      "field": "city_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.city_name",
+      "surface": "indicator_city_year",
+      "field": "city_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.votes",
+      "surface": "indicator_city_year",
+      "field": "votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.voters",
+      "surface": "indicator_city_year",
+      "field": "voters",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.eligible_voters",
+      "surface": "indicator_city_year",
+      "field": "eligible_voters",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.turnout",
+      "surface": "indicator_city_year",
+      "field": "turnout",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.abstention",
+      "surface": "indicator_city_year",
+      "field": "abstention",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.turnout_rate",
+      "surface": "indicator_city_year",
+      "field": "turnout_rate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.abstention_rate",
+      "surface": "indicator_city_year",
+      "field": "abstention_rate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.leading_candidate_id",
+      "surface": "indicator_city_year",
+      "field": "leading_candidate_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.leading_candidate_name",
+      "surface": "indicator_city_year",
+      "field": "leading_candidate_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.leading_votes",
+      "surface": "indicator_city_year",
+      "field": "leading_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.runner_up_votes",
+      "surface": "indicator_city_year",
+      "field": "runner_up_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.leading_vote_share",
+      "surface": "indicator_city_year",
+      "field": "leading_vote_share",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.leading_margin",
+      "surface": "indicator_city_year",
+      "field": "leading_margin",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.votes_per_eligible_voter",
+      "surface": "indicator_city_year",
+      "field": "votes_per_eligible_voter",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.votes_per_turnout",
+      "surface": "indicator_city_year",
+      "field": "votes_per_turnout",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.turnout_band",
+      "surface": "indicator_city_year",
+      "field": "turnout_band",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_city_year.competitiveness_band",
+      "surface": "indicator_city_year",
+      "field": "competitiveness_band",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_summary"
+      ],
+      "formula": "reuso dos KPIs municipais materializados + bandas deterministicas de comparecimento e competitividade",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.id",
+      "surface": "indicator_party_city_year",
+      "field": "id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.year",
+      "surface": "indicator_party_city_year",
+      "field": "year",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.round",
+      "surface": "indicator_party_city_year",
+      "field": "round",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.state",
+      "surface": "indicator_party_city_year",
+      "field": "state",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.city_id",
+      "surface": "indicator_party_city_year",
+      "field": "city_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.city_name",
+      "surface": "indicator_party_city_year",
+      "field": "city_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.office_id",
+      "surface": "indicator_party_city_year",
+      "field": "office_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.office",
+      "surface": "indicator_party_city_year",
+      "field": "office",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_number",
+      "surface": "indicator_party_city_year",
+      "field": "party_number",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party",
+      "surface": "indicator_party_city_year",
+      "field": "party",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_name",
+      "surface": "indicator_party_city_year",
+      "field": "party_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.nominal_votes",
+      "surface": "indicator_party_city_year",
+      "field": "nominal_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.legend_votes",
+      "surface": "indicator_party_city_year",
+      "field": "legend_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.valid_nominal_votes",
+      "surface": "indicator_party_city_year",
+      "field": "valid_nominal_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.valid_legend_votes",
+      "surface": "indicator_party_city_year",
+      "field": "valid_legend_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_votes",
+      "surface": "indicator_party_city_year",
+      "field": "party_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_valid_votes",
+      "surface": "indicator_party_city_year",
+      "field": "party_valid_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.total_party_votes_scope",
+      "surface": "indicator_party_city_year",
+      "field": "total_party_votes_scope",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.total_party_valid_votes_scope",
+      "surface": "indicator_party_city_year",
+      "field": "total_party_valid_votes_scope",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_rank_local",
+      "surface": "indicator_party_city_year",
+      "field": "party_rank_local",
+      "field_role": "indicator",
+      "field_type": "BIGINT",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.previous_party_valid_votes",
+      "surface": "indicator_party_city_year",
+      "field": "previous_party_valid_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.next_party_valid_votes",
+      "surface": "indicator_party_city_year",
+      "field": "next_party_valid_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_vote_share",
+      "surface": "indicator_party_city_year",
+      "field": "party_vote_share",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_valid_vote_share",
+      "surface": "indicator_party_city_year",
+      "field": "party_valid_vote_share",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.has_party_presence",
+      "surface": "indicator_party_city_year",
+      "field": "has_party_presence",
+      "field_role": "quality_flag",
+      "field_type": "BOOLEAN",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.margin_to_previous_party",
+      "surface": "indicator_party_city_year",
+      "field": "margin_to_previous_party",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.margin_to_next_party",
+      "surface": "indicator_party_city_year",
+      "field": "margin_to_next_party",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_party_city_year.party_position_band",
+      "surface": "indicator_party_city_year",
+      "field": "party_position_band",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|partido",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "partido"
+      ],
+      "source_tables": [
+        "party_results"
+      ],
+      "formula": "votos nominais + legenda, share no recorte, ranking e margens partidarias",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_party_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.id",
+      "surface": "indicator_candidate_city_year",
+      "field": "id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.year",
+      "surface": "indicator_candidate_city_year",
+      "field": "year",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.round",
+      "surface": "indicator_candidate_city_year",
+      "field": "round",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.state",
+      "surface": "indicator_candidate_city_year",
+      "field": "state",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.city_id",
+      "surface": "indicator_candidate_city_year",
+      "field": "city_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.city_name",
+      "surface": "indicator_candidate_city_year",
+      "field": "city_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.office_id",
+      "surface": "indicator_candidate_city_year",
+      "field": "office_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.office",
+      "surface": "indicator_candidate_city_year",
+      "field": "office",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.candidate_id",
+      "surface": "indicator_candidate_city_year",
+      "field": "candidate_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.candidate_number",
+      "surface": "indicator_candidate_city_year",
+      "field": "candidate_number",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.candidate_name",
+      "surface": "indicator_candidate_city_year",
+      "field": "candidate_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.ballot_name",
+      "surface": "indicator_candidate_city_year",
+      "field": "ballot_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.party_number",
+      "surface": "indicator_candidate_city_year",
+      "field": "party_number",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.party",
+      "surface": "indicator_candidate_city_year",
+      "field": "party",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.party_name",
+      "surface": "indicator_candidate_city_year",
+      "field": "party_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.votes",
+      "surface": "indicator_candidate_city_year",
+      "field": "votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.valid_votes",
+      "surface": "indicator_candidate_city_year",
+      "field": "valid_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.vote_share",
+      "surface": "indicator_candidate_city_year",
+      "field": "vote_share",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.candidate_rank_local",
+      "surface": "indicator_candidate_city_year",
+      "field": "candidate_rank_local",
+      "field_role": "indicator",
+      "field_type": "BIGINT",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.previous_candidate_votes",
+      "surface": "indicator_candidate_city_year",
+      "field": "previous_candidate_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.next_candidate_votes",
+      "surface": "indicator_candidate_city_year",
+      "field": "next_candidate_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.candidates_in_scope",
+      "surface": "indicator_candidate_city_year",
+      "field": "candidates_in_scope",
+      "field_role": "indicator",
+      "field_type": "BIGINT",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.margin_to_previous_candidate",
+      "surface": "indicator_candidate_city_year",
+      "field": "margin_to_previous_candidate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.margin_to_next_candidate",
+      "surface": "indicator_candidate_city_year",
+      "field": "margin_to_next_candidate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_candidate_city_year.candidate_position_band",
+      "surface": "indicator_candidate_city_year",
+      "field": "candidate_position_band",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|turno|uf|municipio|cargo|candidato",
+      "axes": [
+        "ano",
+        "turno",
+        "uf",
+        "municipio",
+        "cargo",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "election_results"
+      ],
+      "formula": "votos, share, ranking e margens de candidatos por recorte eleitoral local",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_candidate_city_year",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.id",
+      "surface": "indicator_finance_candidate",
+      "field": "id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.year",
+      "surface": "indicator_finance_candidate",
+      "field": "year",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.state",
+      "surface": "indicator_finance_candidate",
+      "field": "state",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.candidate_id",
+      "surface": "indicator_finance_candidate",
+      "field": "candidate_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.candidate_number",
+      "surface": "indicator_finance_candidate",
+      "field": "candidate_number",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.candidate_name",
+      "surface": "indicator_finance_candidate",
+      "field": "candidate_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.ballot_name",
+      "surface": "indicator_finance_candidate",
+      "field": "ballot_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.party_number",
+      "surface": "indicator_finance_candidate",
+      "field": "party_number",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.party",
+      "surface": "indicator_finance_candidate",
+      "field": "party",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.party_name",
+      "surface": "indicator_finance_candidate",
+      "field": "party_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.total_votes",
+      "surface": "indicator_finance_candidate",
+      "field": "total_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.cities_with_votes",
+      "surface": "indicator_finance_candidate",
+      "field": "cities_with_votes",
+      "field_role": "indicator",
+      "field_type": "BIGINT",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.result_rows",
+      "surface": "indicator_finance_candidate",
+      "field": "result_rows",
+      "field_role": "indicator",
+      "field_type": "BIGINT",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.revenue_value",
+      "surface": "indicator_finance_candidate",
+      "field": "revenue_value",
+      "field_role": "indicator",
+      "field_type": "DECIMAL(38,2)",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.expense_value",
+      "surface": "indicator_finance_candidate",
+      "field": "expense_value",
+      "field_role": "indicator",
+      "field_type": "DECIMAL(38,2)",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.financial_value",
+      "surface": "indicator_finance_candidate",
+      "field": "financial_value",
+      "field_role": "indicator",
+      "field_type": "DECIMAL(38,2)",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.financial_events",
+      "surface": "indicator_finance_candidate",
+      "field": "financial_events",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.finance_balance",
+      "surface": "indicator_finance_candidate",
+      "field": "finance_balance",
+      "field_role": "indicator",
+      "field_type": "DECIMAL(38,2)",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.cost_per_vote",
+      "surface": "indicator_finance_candidate",
+      "field": "cost_per_vote",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.revenue_per_vote",
+      "surface": "indicator_finance_candidate",
+      "field": "revenue_per_vote",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.expense_revenue_ratio",
+      "surface": "indicator_finance_candidate",
+      "field": "expense_revenue_ratio",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.flag_without_votes",
+      "surface": "indicator_finance_candidate",
+      "field": "flag_without_votes",
+      "field_role": "indicator",
+      "field_type": "BOOLEAN",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_finance_candidate.flag_without_finance",
+      "surface": "indicator_finance_candidate",
+      "field": "flag_without_finance",
+      "field_role": "indicator",
+      "field_type": "BOOLEAN",
+      "grain": "ano|uf|candidato",
+      "axes": [
+        "ano",
+        "uf",
+        "candidato",
+        "partido"
+      ],
+      "source_tables": [
+        "finance_candidate_summary",
+        "election_results"
+      ],
+      "formula": "receita, despesa, saldo, eventos, votos, custo por voto e receita por voto",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_finance_candidate",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.id",
+      "surface": "indicator_historical_city",
+      "field": "id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.year",
+      "surface": "indicator_historical_city",
+      "field": "year",
+      "field_role": "dimension",
+      "field_type": "INTEGER",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.state",
+      "surface": "indicator_historical_city",
+      "field": "state",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.city_id",
+      "surface": "indicator_historical_city",
+      "field": "city_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.city_name",
+      "surface": "indicator_historical_city",
+      "field": "city_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.votes",
+      "surface": "indicator_historical_city",
+      "field": "votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.voters",
+      "surface": "indicator_historical_city",
+      "field": "voters",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.eligible_voters",
+      "surface": "indicator_historical_city",
+      "field": "eligible_voters",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.turnout",
+      "surface": "indicator_historical_city",
+      "field": "turnout",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.abstention",
+      "surface": "indicator_historical_city",
+      "field": "abstention",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.turnout_rate",
+      "surface": "indicator_historical_city",
+      "field": "turnout_rate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.abstention_rate",
+      "surface": "indicator_historical_city",
+      "field": "abstention_rate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.leading_candidate_id",
+      "surface": "indicator_historical_city",
+      "field": "leading_candidate_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.leading_candidate_name",
+      "surface": "indicator_historical_city",
+      "field": "leading_candidate_name",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.leading_votes",
+      "surface": "indicator_historical_city",
+      "field": "leading_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.runner_up_votes",
+      "surface": "indicator_historical_city",
+      "field": "runner_up_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.leading_vote_share",
+      "surface": "indicator_historical_city",
+      "field": "leading_vote_share",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.leading_margin",
+      "surface": "indicator_historical_city",
+      "field": "leading_margin",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.votes_per_eligible_voter",
+      "surface": "indicator_historical_city",
+      "field": "votes_per_eligible_voter",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.votes_per_turnout",
+      "surface": "indicator_historical_city",
+      "field": "votes_per_turnout",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.turnout_band",
+      "surface": "indicator_historical_city",
+      "field": "turnout_band",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.competitiveness_band",
+      "surface": "indicator_historical_city",
+      "field": "competitiveness_band",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.previous_year",
+      "surface": "indicator_historical_city",
+      "field": "previous_year",
+      "field_role": "indicator",
+      "field_type": "INTEGER",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.previous_votes",
+      "surface": "indicator_historical_city",
+      "field": "previous_votes",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.previous_turnout",
+      "surface": "indicator_historical_city",
+      "field": "previous_turnout",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.previous_abstention",
+      "surface": "indicator_historical_city",
+      "field": "previous_abstention",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.previous_leading_margin",
+      "surface": "indicator_historical_city",
+      "field": "previous_leading_margin",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.previous_leading_candidate_id",
+      "surface": "indicator_historical_city",
+      "field": "previous_leading_candidate_id",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.votes_delta",
+      "surface": "indicator_historical_city",
+      "field": "votes_delta",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.votes_delta_rate",
+      "surface": "indicator_historical_city",
+      "field": "votes_delta_rate",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.turnout_delta",
+      "surface": "indicator_historical_city",
+      "field": "turnout_delta",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.abstention_delta",
+      "surface": "indicator_historical_city",
+      "field": "abstention_delta",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.leading_margin_delta",
+      "surface": "indicator_historical_city",
+      "field": "leading_margin_delta",
+      "field_role": "indicator",
+      "field_type": "DOUBLE",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.same_leading_candidate_as_previous",
+      "surface": "indicator_historical_city",
+      "field": "same_leading_candidate_as_previous",
+      "field_role": "indicator",
+      "field_type": "BOOLEAN",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_historical_city.historical_status",
+      "surface": "indicator_historical_city",
+      "field": "historical_status",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "ano|uf|municipio",
+      "axes": [
+        "ano",
+        "uf",
+        "municipio"
+      ],
+      "source_tables": [
+        "indicator_city_year"
+      ],
+      "formula": "lag por municipio para deltas absolutos e percentuais em relacao ao pleito anterior disponivel",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_historical_city",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_traceability.surface",
+      "surface": "indicator_traceability",
+      "field": "surface",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "surface",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_traceability",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_traceability.source_tables",
+      "surface": "indicator_traceability",
+      "field": "source_tables",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "surface",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_traceability",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_traceability.formula",
+      "surface": "indicator_traceability",
+      "field": "formula",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "surface",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_traceability",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_traceability.grain",
+      "surface": "indicator_traceability",
+      "field": "grain",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "surface",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_traceability",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_traceability.axes",
+      "surface": "indicator_traceability",
+      "field": "axes",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "surface",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_traceability",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_traceability.null_policy",
+      "surface": "indicator_traceability",
+      "field": "null_policy",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "surface",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_traceability",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.surface",
+      "surface": "indicator_quality_flags",
+      "field": "surface",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.year",
+      "surface": "indicator_quality_flags",
+      "field": "year",
+      "field_role": "dimension",
+      "field_type": "BIGINT",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.state",
+      "surface": "indicator_quality_flags",
+      "field": "state",
+      "field_role": "dimension",
+      "field_type": "VARCHAR",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.scope",
+      "surface": "indicator_quality_flags",
+      "field": "scope",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.flag",
+      "surface": "indicator_quality_flags",
+      "field": "flag",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.affected_rows",
+      "surface": "indicator_quality_flags",
+      "field": "affected_rows",
+      "field_role": "indicator",
+      "field_type": "BIGINT",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    },
+    {
+      "indicator_id": "indicator_quality_flags.note",
+      "surface": "indicator_quality_flags",
+      "field": "note",
+      "field_role": "indicator",
+      "field_type": "VARCHAR",
+      "grain": "surface, ano, uf e flag",
+      "axes": [],
+      "source_tables": [],
+      "formula": null,
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador.",
+      "coverage_status": "materialized",
+      "publication_surface": "indicator_quality_flags",
+      "version": "v1"
+    }
+  ]
+}

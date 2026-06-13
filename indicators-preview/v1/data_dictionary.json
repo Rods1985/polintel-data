@@ -1,0 +1,882 @@
+{
+  "generated_at_utc": "2026-06-12T18:28:19.996020+00:00",
+  "schema_version": "indicators_publication/v1",
+  "columns": [
+    {
+      "surface": "indicator_city_year",
+      "column_name": "id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "year",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "state",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "city_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "city_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "voters",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "eligible_voters",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "turnout",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "abstention",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "turnout_rate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "abstention_rate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "leading_candidate_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "leading_candidate_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "leading_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "runner_up_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "leading_vote_share",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "leading_margin",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "votes_per_eligible_voter",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "votes_per_turnout",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "turnout_band",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_city_year",
+      "column_name": "competitiveness_band",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "year",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "round",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "state",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "city_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "city_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "office_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "office",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_number",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "nominal_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "legend_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "valid_nominal_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "valid_legend_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_valid_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "total_party_votes_scope",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "total_party_valid_votes_scope",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_rank_local",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "previous_party_valid_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "next_party_valid_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_vote_share",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_valid_vote_share",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "has_party_presence",
+      "column_type": "BOOLEAN",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "margin_to_previous_party",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "margin_to_next_party",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_party_city_year",
+      "column_name": "party_position_band",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "year",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "round",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "state",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "city_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "city_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "office_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "office",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "candidate_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "candidate_number",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "candidate_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "ballot_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "party_number",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "party",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "party_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "valid_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "vote_share",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "candidate_rank_local",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "previous_candidate_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "next_candidate_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "candidates_in_scope",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "margin_to_previous_candidate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "margin_to_next_candidate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_candidate_city_year",
+      "column_name": "candidate_position_band",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "year",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "state",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "candidate_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "candidate_number",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "candidate_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "ballot_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "party_number",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "party",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "party_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "total_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "cities_with_votes",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "result_rows",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "revenue_value",
+      "column_type": "DECIMAL(38,2)",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "expense_value",
+      "column_type": "DECIMAL(38,2)",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "financial_value",
+      "column_type": "DECIMAL(38,2)",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "financial_events",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "finance_balance",
+      "column_type": "DECIMAL(38,2)",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "cost_per_vote",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "revenue_per_vote",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "expense_revenue_ratio",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "flag_without_votes",
+      "column_type": "BOOLEAN",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_finance_candidate",
+      "column_name": "flag_without_finance",
+      "column_type": "BOOLEAN",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "year",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "state",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "city_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "city_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "voters",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "eligible_voters",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "turnout",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "abstention",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "turnout_rate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "abstention_rate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "leading_candidate_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "leading_candidate_name",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "leading_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "runner_up_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "leading_vote_share",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "leading_margin",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "votes_per_eligible_voter",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "votes_per_turnout",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "turnout_band",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "competitiveness_band",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "previous_year",
+      "column_type": "INTEGER",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "previous_votes",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "previous_turnout",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "previous_abstention",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "previous_leading_margin",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "previous_leading_candidate_id",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "votes_delta",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "votes_delta_rate",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "turnout_delta",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "abstention_delta",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "leading_margin_delta",
+      "column_type": "DOUBLE",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "same_leading_candidate_as_previous",
+      "column_type": "BOOLEAN",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_historical_city",
+      "column_name": "historical_status",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_traceability",
+      "column_name": "surface",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_traceability",
+      "column_name": "source_tables",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_traceability",
+      "column_name": "formula",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_traceability",
+      "column_name": "grain",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_traceability",
+      "column_name": "axes",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_traceability",
+      "column_name": "null_policy",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "surface",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "year",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "state",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "scope",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "flag",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "affected_rows",
+      "column_type": "BIGINT",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    },
+    {
+      "surface": "indicator_quality_flags",
+      "column_name": "note",
+      "column_type": "VARCHAR",
+      "null_policy": "Preservar null; nao converter para zero sem regra do indicador."
+    }
+  ]
+}
